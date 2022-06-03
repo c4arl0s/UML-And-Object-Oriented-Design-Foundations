@@ -1,0 +1,36 @@
+Introduction
+Why you should learn Object-Oriented Design?
+What's covered in this book ?
+Prerequisites
+Software Development Methodologies
+The Waterfall Model
+Agile
+Waterfall or Agile?
+Core Object-Orientation Concepts
+Objects
+The Class 
+Abstraction
+Encapsulation
+Inheritance
+Polymorphism
+Object-Oriented Analysis and Design
+Collecting Requirements
+Mapping Requirements to Technical Descriptions
+Why do we need a Common Descriptive Language 
+UML Basics and fundamental diagram types
+The Use-Case Diagram
+Visibility
+Associations
+Generalization
+Dependency, Aggregation, composition & Realization
+Sequence Diagrams
+Activity Diagrams
+Statechart diagrams
+Case Study: Designing a Note-Taking App
+Collecting the requirements
+Creating User Stories
+Diagraming the Main Use Cases
+Identifying the classes
+Describing the Flow of Note Creating using Sequence Diagrams
+The Note Object´s StateChart Diagram
+What is next?
