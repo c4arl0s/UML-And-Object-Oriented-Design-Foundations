@@ -2,8 +2,8 @@
 
 # [UML-And-Object-Oriented-Design-Foundations - Content](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#go-back-to-overview)
 
-1. [ ] [1. Introduction](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#1-Introduction)
-2. [ ] [2. Why you should learn Object-Oriented Design?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#2-Why-you-should-learn-Object-Oriented-Design)
+1. [x] [1. Introduction](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#1-Introduction)
+2. [x] [2. Why you should learn Object-Oriented Design?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#2-Why-you-should-learn-Object-Oriented-Design)
 3. [ ] [3. What's covered in this book ?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#3-Whats-covered-in-this-book-)
 4. [ ] [4. Prerequisites](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#4-Prerequisites)
 5. [ ] [5. Software Development Methodologies](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#5-Software-Development-Methodologies)
@@ -46,6 +46,12 @@
 This notes will teach you fundamental knowledge needed to design and build object-oriented software systems.
 
 # 2. [Why you should learn Object-Oriented Design?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+- Learn basic syntax.
+- Design a software system by applying common object-oriented programming principles.
+- Learn how to describe our design so that others can understand it clearly.
+- Learn how to answer object-oriented related questions during job interviews.
+
 # 3. [What's covered in this book ?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 4. [Prerequisites](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 5. [Software Development Methodologies](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
