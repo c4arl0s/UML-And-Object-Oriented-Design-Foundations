@@ -4,7 +4,7 @@
 
 1. [x] [1. Introduction](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#1-Introduction)
 2. [x] [2. Why you should learn Object-Oriented Design?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#2-Why-you-should-learn-Object-Oriented-Design)
-3. [ ] [3. What's covered in this book ?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#3-Whats-covered-in-this-book-)
+3. [x] [3. What's covered in this book ?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#3-Whats-covered-in-this-book-)
 4. [ ] [4. Prerequisites](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#4-Prerequisites)
 5. [ ] [5. Software Development Methodologies](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#5-Software-Development-Methodologies)
 6. [ ] [6. The Waterfall Model](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#6-The-Waterfall-Model)
@@ -53,6 +53,27 @@ This notes will teach you fundamental knowledge needed to design and build objec
 - Learn how to answer object-oriented related questions during job interviews.
 
 # 3. [What's covered in this book ?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+- Concepts
+- Unified Modeling Language
+
+UML: Provides a standar set of visual symbols and diagramming techniques used to effectively communicate software design concepts. Using UML you can sketch our systems easily.
+
+The steps required to create a software system are not carved in stone, this is known as Software development methodlogies. There is two methodlogies.
+
+1. Fundamental object-oriented concepts.
+2. Object oriented software analysis
+3. Design process.
+4. Dive into UML. Core UML notions and the fundamental UML diagram types.
+5. Use cases (primary way of describing the requirements in a formal way).
+6. Introduce of class diagram, which let us describe the main types that form a system and the relationships between them.
+7. Sequence diagrams, which are the way to go if you want to rerpesent dynamic behavior of your objects.
+8. Activity and the state diagram.
+9. Design a note taking application from scratch.
+10. Collect requirements of note taking app.
+11. Create use case diagrams.
+12. Create the sequence and the state diagram in action.
+
 # 4. [Prerequisites](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 5. [Software Development Methodologies](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 6. [The Waterfall Model](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
