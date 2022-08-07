@@ -18,6 +18,6 @@ jobs:
     steps:
       - uses: 
         with:
-          project: @c4arl0s's backlog
+          project: c4arl0s's backlog
           column: In Progress
           repo-token: ${{ secrets.Secret_of_UML }}
