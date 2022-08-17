@@ -8,7 +8,7 @@
 4. [x] [4. Prerequisites](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#4-Prerequisites)
 5. [x] [5. Software Development Methodologies](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#5-Software-Development-Methodologies)
 6. [x] [6. The Waterfall Model](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#6-The-Waterfall-Model)
-7. [ ] [7. Agile](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#7-Agile)
+7. [x] [7. Agile](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#7-Agile)
 8. [ ] [8. Waterfall or Agile?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#8-Waterfall-or-Agile)
 9. [ ] [9. Core Object-Orientation Concepts](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#9-Core-Object-Orientation-Concepts)
 10. [ ] [10. Objects](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#10-Objects)
@@ -118,6 +118,44 @@ Questions to ask:
 - If the client changes their mind frequently, or our design misses essential aspects, we are going to hit problems during development or testing. In such cases, we should follow a different approach.
 
 # 7. [Agile](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+Agile is a relatively new approach to software project management. It all began with the agile manifesto in 2001. This manifesto was an attempt to end the proliferation of methodologies that had develped.
+
+The agile manifesto defines four values:
+
+1. Individuals and interactions over the processes and tools.
+2. Working software over comprehensive documentation.
+3. Customer collaboration over contract negotiation.
+4. Responding to change over following a plan.
+
+Agile welcomes changes even at the later phases of the development cycle.
+
+Some planning is also required for agile projects. But we don't try to come up with a detailed plan for the entire project before starting any development activities.
+
+As a consequence we are not blocked until all the requirements are clarified and each and every question gets answered.
+
+The main idea behind Agile is that we can provide functional software iteratively instead of delivering the entire project all at once. The work is broken up into shorter chunks called sprints.
+
+The Sprint is usually two to four weeks long. At the end of each sprint the team should deliver a version that is an improvement over the previous sprint's outcome.
+
+<img width="423" alt="Screen Shot 2022-08-17 at 8 42 43 a m" src="https://user-images.githubusercontent.com/24994818/185149449-ef6c188a-1d66-4b72-95ec-849834ac48da.png">
+
+This interactive approach provides an opportunity to frequently review the product that is being developed. Stakeholders have a chance to evaluate the software and provide their feedback early on rather than waiting for the final product to be delivered. These frequent checkpoints are super useful as they ensure that the project evolves in the right direction.
+
+Unlike the waterfall, agile methodlogies do not separate testing from development. Testing is tightly integrated with development and the entire team owns the responsibility for the quality of the product. Also involving the bussiness users in the development process stands at the core of agile approaches.
+
+There is a strong relationship between the project team and the stakeholders and bussiness users. This model works best in situations where the requirements can't be defined up-front.
+
+Agile is a good fit for the software projects that are depending on many uncertain factors and changes are to be expected.
+
+One of the big benefits of this collaborative model is that it usually leads to higher customer satisfaction. Also team memembers will likely be more motivated by engaging customers directly.
+
+Note that Agile is not a methodology but rather a way of thinking defined by the agile manifesto values and principles.
+
+> Agile is a way of thinking.
+
+Scrum and Kanban are examples of discrete methodlogies that implement the Agile approach.
+
 # 8. [Waterfall or Agile?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 9. [Core Object-Orientation Concepts](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 10. [Objects](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
