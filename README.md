@@ -7,7 +7,7 @@
 3. [x] [3. What's covered in this book ?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#3-Whats-covered-in-this-book-)
 4. [x] [4. Prerequisites](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#4-Prerequisites)
 5. [x] [5. Software Development Methodologies](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#5-Software-Development-Methodologies)
-6. [ ] [6. The Waterfall Model](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#6-The-Waterfall-Model)
+6. [x] [6. The Waterfall Model](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#6-The-Waterfall-Model)
 7. [ ] [7. Agile](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#7-Agile)
 8. [ ] [8. Waterfall or Agile?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#8-Waterfall-or-Agile)
 9. [ ] [9. Core Object-Orientation Concepts](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#9-Core-Object-Orientation-Concepts)
@@ -88,6 +88,35 @@ The steps required to create a software system are not carved in stone, this is 
 Both help us to design, coding, product management, budgeting, testing, documentation, release and maintenance.
 
 # 6. [The Waterfall Model](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+The Waterfall is a linear model. It defines development steps or phases. You start executing one step, complete it and then start the next one. This approach gives us a steady, downward order. Hence the name Waterfall.
+
+The development process flows in cascades. Each development phase requisites the previous one to be completed. Let's talk a bit about these phases.
+
+1. First, we collect and analize the requirements.
+2. After collecting and analyzing the requirements, we define the overall design of our software. The design should be as clear and detailed as possible.
+
+Questions to ask:
+
+- Which packages or components will form our system?.
+- What are the fundamental types of each component?.
+- How do these types interact with each other to achive the required functionality?.
+- Is our software secure?. How about performance?.
+- How does our software respond to errors?. How do we handle edge cases?.
+- Should we extend our system in the future?.
+- Which third-party components do we use?.
+
+3. The software development phase is usually divided into smaller units. Each unit is then implemented and tested by developers.
+4. Verification phase.
+5. Test are executed to ensure that the software works as expected.
+6. Maintenance phase.
+
+<img width="435" alt="Screen Shot 2022-08-16 at 11 04 16 p m" src="https://user-images.githubusercontent.com/24994818/185032317-8dbe79ad-76b0-410b-a78e-c0895c1b5c25.png">
+
+- The waterfall model is used for life-control,  medical and military systems.
+- The waterfall is a perfect choice if all requirements are precisely defined and will not change over time.
+- If the client changes their mind frequently, or our design misses essential aspects, we are going to hit problems during development or testing. In such cases, we should follow a different approach.
+
 # 7. [Agile](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 8. [Waterfall or Agile?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 9. [Core Object-Orientation Concepts](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
