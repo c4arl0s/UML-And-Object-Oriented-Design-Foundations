@@ -6,7 +6,7 @@
 2. [x] [2. Why you should learn Object-Oriented Design?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#2-Why-you-should-learn-Object-Oriented-Design)
 3. [x] [3. What's covered in this book ?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#3-Whats-covered-in-this-book-)
 4. [x] [4. Prerequisites](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#4-Prerequisites)
-5. [ ] [5. Software Development Methodologies](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#5-Software-Development-Methodologies)
+5. [x] [5. Software Development Methodologies](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#5-Software-Development-Methodologies)
 6. [ ] [6. The Waterfall Model](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#6-The-Waterfall-Model)
 7. [ ] [7. Agile](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#7-Agile)
 8. [ ] [8. Waterfall or Agile?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#8-Waterfall-or-Agile)
@@ -81,6 +81,12 @@ The steps required to create a software system are not carved in stone, this is 
 <img width="1158" alt="Screen Shot 2022-08-16 at 10 09 56 p m" src="https://user-images.githubusercontent.com/24994818/185026312-7d248f57-21a2-4314-aa2a-f1cc7995692e.png">
 
 # 5. [Software Development Methodologies](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+1. The waterfall model, which requires you to have a detailed plan before starting any coding. The requirements need to be fixed, so no changes are expected during development.
+2. The change friendly, responsive Agile Approach, which works great for projects where the expectations can change rapidly and frequently.
+
+Both help us to design, coding, product management, budgeting, testing, documentation, release and maintenance.
+
 # 6. [The Waterfall Model](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 7. [Agile](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 8. [Waterfall or Agile?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
