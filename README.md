@@ -5,7 +5,7 @@
 1. [x] [1. Introduction](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#1-Introduction)
 2. [x] [2. Why you should learn Object-Oriented Design?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#2-Why-you-should-learn-Object-Oriented-Design)
 3. [x] [3. What's covered in this book ?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#3-Whats-covered-in-this-book-)
-4. [ ] [4. Prerequisites](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#4-Prerequisites)
+4. [x] [4. Prerequisites](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#4-Prerequisites)
 5. [ ] [5. Software Development Methodologies](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#5-Software-Development-Methodologies)
 6. [ ] [6. The Waterfall Model](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#6-The-Waterfall-Model)
 7. [ ] [7. Agile](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#7-Agile)
@@ -75,6 +75,11 @@ The steps required to create a software system are not carved in stone, this is 
 12. Create the sequence and the state diagram in action.
 
 # 4. [Prerequisites](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+- [Download StarUML](https://staruml.io)
+
+<img width="1158" alt="Screen Shot 2022-08-16 at 10 09 56 p m" src="https://user-images.githubusercontent.com/24994818/185026312-7d248f57-21a2-4314-aa2a-f1cc7995692e.png">
+
 # 5. [Software Development Methodologies](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 6. [The Waterfall Model](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 7. [Agile](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
