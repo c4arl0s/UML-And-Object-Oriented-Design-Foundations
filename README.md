@@ -14,7 +14,7 @@
 10. [x] [10. Objects](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#10-Objects)
 11. [x] [11. The Class](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#11-The-Class)
 12. [x] [12. Abstraction](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#12-Abstraction)
-13. [ ] [13. Encapsulation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#13-Encapsulation)
+13. [x] [13. Encapsulation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#13-Encapsulation)
 14. [ ] [14. Inheritance](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#14-Inheritance)
 15. [ ] [15. Polymorphism](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#15-Polymorphism)
 16. [ ] [16. Object-Oriented Analysis and Design](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#16-Object-Oriented-Analysis-and-Design)
@@ -202,6 +202,29 @@ Abstracion is a way of describing complex problems in simple terms, by ignoring 
 > Focus on essential qualities, discard unimportant ones.
 
 # 13. [Encapsulation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+We encapsulate something to protect it and keep its parts together.
+
+<img width="212" alt="Screen Shot 2022-08-19 at 2 00 56 a m" src="https://user-images.githubusercontent.com/24994818/185562248-df8c4e4a-82a5-42c4-97ac-255013a60432.png">
+
+In OOP, this translates to packing together our properties and methods in a class. Encapsulation also means hiding the gears and the levers.
+
+We don´t want to expose the inner workings of our class. An object should only reveal the essential features. This concept is called Data Hiding. By hiding its internal details, the object is protected from external interference.
+
+We restrict clients from modifying the object in ways we did not originally plan, whether it is intentional or accidental. Additionally, we prevent other parts of the system from relying on properties or behavior that may change.
+
+If we expose unnecessary details, any changes to those attributes or methods may affect other parts of the system. Whereas if we restricted access to that data or behavior, we don´t have to worry about the ripple effect of our changes.
+
+Data hiding is not about selfishly keeping stuff for ourselfts. It is rather about protecting our classes from unwanted external dependencies.
+
+> Expose only as much as your class properties and methods as needed for normal usage.
+
+Data hiding plays an essential role in keeping the dependencies between objects to a minimum.
+
+A tighly couple system, with most of the objects depending on each other, is the obvious sign of a bad design. Updating or maintaining such a system is a pain.
+
+Any tiny modification will cascade down and require you to change other parts of the system, too. It is like a never-ending nightmare.
+
 # 14. [Inheritance](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 15. [Polymorphism](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 16. [Object-Oriented Analysis and Design](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
