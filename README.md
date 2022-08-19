@@ -165,6 +165,17 @@ When developing a weapons control system, the requirements should be clarified i
 When you are loking to create the next big social media platform for iOS and Android, this high level of uncertainty calls for an agile approach. It will require multiple iterations.
 
 # 9. [Core Object-Orientation Concepts](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+<img width="513" alt="Screen Shot 2022-08-19 at 1 25 11 a m" src="https://user-images.githubusercontent.com/24994818/185556502-7eb84598-6a68-4db2-ba26-0ab7ca098ba1.png">
+
+1. Unstructured programming
+2. Structured programming.
+3. Object Oriented programming.
+
+OOP split apart the program into self-contained objects. Each object represents a part of the system that gets mapped to a distinc entity . Basically, an object functions as a separate program by itself. It operates on its own data and has a specific role.
+
+The objects that form the system interact with each other. Object-orientation aims to bring the world of programming closer to the real world.
+
 # 10. [Objects](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 11. [The Class](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 12. [Abstraction](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
