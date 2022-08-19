@@ -10,8 +10,8 @@
 6. [x] [6. The Waterfall Model](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#6-The-Waterfall-Model)
 7. [x] [7. Agile](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#7-Agile)
 8. [x] [8. Waterfall or Agile?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#8-Waterfall-or-Agile)
-9. [ ] [9. Core Object-Orientation Concepts](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#9-Core-Object-Orientation-Concepts)
-10. [ ] [10. Objects](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#10-Objects)
+9. [x] [9. Core Object-Orientation Concepts](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#9-Core-Object-Orientation-Concepts)
+10. [x] [10. Objects](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#10-Objects)
 11. [ ] [11. The Class](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#11-The-Class)
 12. [ ] [12. Abstraction](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#12-Abstraction)
 13. [ ] [13. Encapsulation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#13-Encapsulation)
@@ -177,6 +177,18 @@ OOP split apart the program into self-contained objects. Each object represents 
 The objects that form the system interact with each other. Object-orientation aims to bring the world of programming closer to the real world.
 
 # 10. [Objects](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+1. An Object represent a thing. 
+2. Objects may contain or refer to other objects.
+3. We can describe objects using their properties.
+4. All these properties describe an obejct in the real world.
+5. Objects have their identity, their own state. 
+6. Changing the state of an object does not change of other objects.
+7. Their state is independent, each has its private identity.
+8. Besides properties and identity, and object has its own behavior. The behavior of an object is what it can do.
+
+<img width="435" alt="Screen Shot 2022-08-19 at 1 38 57 a m" src="https://user-images.githubusercontent.com/24994818/185558608-214ea775-87c6-4fe4-940c-0d3b93ac1bf3.png">
+
 # 11. [The Class](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 12. [Abstraction](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 13. [Encapsulation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
