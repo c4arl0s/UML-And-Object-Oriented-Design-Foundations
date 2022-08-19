@@ -9,7 +9,7 @@
 5. [x] [5. Software Development Methodologies](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#5-Software-Development-Methodologies)
 6. [x] [6. The Waterfall Model](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#6-The-Waterfall-Model)
 7. [x] [7. Agile](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#7-Agile)
-8. [ ] [8. Waterfall or Agile?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#8-Waterfall-or-Agile)
+8. [x] [8. Waterfall or Agile?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#8-Waterfall-or-Agile)
 9. [ ] [9. Core Object-Orientation Concepts](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#9-Core-Object-Orientation-Concepts)
 10. [ ] [10. Objects](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#10-Objects)
 11. [ ] [11. The Class](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#11-The-Class)
@@ -157,6 +157,13 @@ Note that Agile is not a methodology but rather a way of thinking defined by the
 Scrum and Kanban are examples of discrete methodlogies that implement the Agile approach.
 
 # 8. [Waterfall or Agile?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+Both have their place.
+
+When developing a weapons control system, the requirements should be clarified in advanced and need to be stable. A waterfall approach  makes a perfect sense in this case.
+
+When you are loking to create the next big social media platform for iOS and Android, this high level of uncertainty calls for an agile approach. It will require multiple iterations.
+
 # 9. [Core Object-Orientation Concepts](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 10. [Objects](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 11. [The Class](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
