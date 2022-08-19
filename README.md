@@ -12,7 +12,7 @@
 8. [x] [8. Waterfall or Agile?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#8-Waterfall-or-Agile)
 9. [x] [9. Core Object-Orientation Concepts](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#9-Core-Object-Orientation-Concepts)
 10. [x] [10. Objects](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#10-Objects)
-11. [ ] [11. The Class](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#11-The-Class)
+11. [x] [11. The Class](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#11-The-Class)
 12. [ ] [12. Abstraction](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#12-Abstraction)
 13. [ ] [13. Encapsulation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#13-Encapsulation)
 14. [ ] [14. Inheritance](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#14-Inheritance)
@@ -190,6 +190,11 @@ The objects that form the system interact with each other. Object-orientation ai
 <img width="435" alt="Screen Shot 2022-08-19 at 1 38 57 a m" src="https://user-images.githubusercontent.com/24994818/185558608-214ea775-87c6-4fe4-940c-0d3b93ac1bf3.png">
 
 # 11. [The Class](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+A class is a blueprint of an object.
+
+We created a class by a giving it a name, declaring its properties an actions. We call these actions methods. Methods are blocks of code that can be called to execute certain operations. They may take input parameters and can also return values. Methods are like functions in structured programming languages. The methods are basically functions embedded in a class.
+
 # 12. [Abstraction](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 13. [Encapsulation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 14. [Inheritance](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
