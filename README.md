@@ -16,8 +16,8 @@
 12. [x] [12. Abstraction](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#12-Abstraction)
 13. [x] [13. Encapsulation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#13-Encapsulation)
 14. [x] [14. Inheritance](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#14-Inheritance)
-15. [ ] [15. Polymorphism](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#15-Polymorphism)
-16. [ ] [16. Object-Oriented Analysis and Design](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#16-Object-Oriented-Analysis-and-Design)
+15. [x] [15. Polymorphism](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#15-Polymorphism)
+16. [x] [16. Object-Oriented Analysis and Design](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#16-Object-Oriented-Analysis-and-Design)
 17. [ ] [17. Collecting Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#17-Collecting-Requirements)
 18. [ ] [18. Mapping Requirements to Technical Descriptions](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#18-Mapping-Requirements-to-Technical-Descriptions)
 19. [ ] [19. Why do we need a Common Descriptive Language](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#19-Why-do-we-need-a-Common-Descriptive-Language)
@@ -263,6 +263,15 @@ We see in console that the attack method produced the same output in the console
 That object was type WaterPokemon, which overrides the `attack()` method.
 
 # 16. [Object-Oriented Analysis and Design](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+1. Collect the requirements.
+2. Describe the software system.
+    - if Agile
+        - Accurate description
+    - Include the creation of visual mockups, wireframes or even prototypes.
+3. Identify the things that form our system.
+4. Describe the behavior of our system.
+
 # 17. [Collecting Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 18. [Mapping Requirements to Technical Descriptions](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 19. [Why do we need a Common Descriptive Language](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
