@@ -234,6 +234,34 @@ Any tiny modification will cascade down and require you to change other parts of
 <img width="611" alt="Screen Shot 2022-08-22 at 8 04 49 a m" src="https://user-images.githubusercontent.com/24994818/185928333-5b7ef590-70f5-4dca-8ff1-7591589ed3c4.png">
 
 # 15. [Polymorphism](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+Polymorphism is about working freely with instances of many different classes that share a common superclass.
+
+1. The condition of occurring in several different forms.
+2. Polymorphism lets us work with objects created from any of these classes. Using the pokemon example we could create an army of mixed pokemons and tell them to attack at once.
+3. If we create a list of pokemons, now I can traverse this list and call the `attack()` method on the objects in the list. We don´t need to know the class they were instantiated from.
+
+```swift
+let pokemons = [eevie, pikachu, misty, charizard]
+
+for pokemon in pokemons {
+    pokemon.attack()
+}
+```
+
+If we run.
+
+```console
+Pokemon attack!
+Pokemon attack!
+WaterPokemon attack!
+Pokemon attack!
+```
+
+We see in console that the attack method produced the same output in the console for all the objects but one.
+
+That object was type WaterPokemon, which overrides the `attack()` method.
+
 # 16. [Object-Oriented Analysis and Design](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 17. [Collecting Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 18. [Mapping Requirements to Technical Descriptions](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
