@@ -15,7 +15,7 @@
 11. [x] [11. The Class](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#11-The-Class)
 12. [x] [12. Abstraction](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#12-Abstraction)
 13. [x] [13. Encapsulation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#13-Encapsulation)
-14. [ ] [14. Inheritance](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#14-Inheritance)
+14. [x] [14. Inheritance](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#14-Inheritance)
 15. [ ] [15. Polymorphism](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#15-Polymorphism)
 16. [ ] [16. Object-Oriented Analysis and Design](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#16-Object-Oriented-Analysis-and-Design)
 17. [ ] [17. Collecting Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#17-Collecting-Requirements)
@@ -226,6 +226,13 @@ A tighly couple system, with most of the objects depending on each other, is the
 Any tiny modification will cascade down and require you to change other parts of the system, too. It is like a never-ending nightmare.
 
 # 14. [Inheritance](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+1. Inheritance means code reuse. 
+2. Object-orientation is about granularity and separation of concerns. Each class should focus on one set of specific functionality and do that well.
+3. A class can inherit all the attributes and behavior from another class.
+
+<img width="611" alt="Screen Shot 2022-08-22 at 8 04 49 a m" src="https://user-images.githubusercontent.com/24994818/185928333-5b7ef590-70f5-4dca-8ff1-7591589ed3c4.png">
+
 # 15. [Polymorphism](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 16. [Object-Oriented Analysis and Design](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 17. [Collecting Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
