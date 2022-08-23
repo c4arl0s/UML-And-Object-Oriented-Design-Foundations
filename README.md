@@ -18,7 +18,7 @@
 14. [x] [14. Inheritance](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#14-Inheritance)
 15. [x] [15. Polymorphism](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#15-Polymorphism)
 16. [x] [16. Object-Oriented Analysis and Design](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#16-Object-Oriented-Analysis-and-Design)
-17. [ ] [17. Collecting Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#17-Collecting-Requirements)
+17. [x] [17. Collecting Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#17-Collecting-Requirements)
 18. [ ] [18. Mapping Requirements to Technical Descriptions](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#18-Mapping-Requirements-to-Technical-Descriptions)
 19. [ ] [19. Why do we need a Common Descriptive Language](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#19-Why-do-we-need-a-Common-Descriptive-Language)
 20. [ ] [20. UML Basics and fundamental diagram types](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#20-UML-Basics-and-fundamental-diagram-types)
@@ -273,6 +273,66 @@ That object was type WaterPokemon, which overrides the `attack()` method.
 4. Describe the behavior of our system.
 
 # 17. [Collecting Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+Requirement means "a thing that is needed or wanted". We must clarified what is needed or wanted in our applications.
+
+The features of the system are the so-called functional requirements. Functional requirements represent what the app needs to provide feature-wise, how it should react to a particular input, or what is the expected behavior in a specific situation.
+
+Let's say you are about to develop an app for runners. You should answer questions like: 
+
+1. Should the actual speed always be visible on the main screen?.
+2. Do we allow imperial and metric units?.
+3. Should we make this configurable by the user?.
+4. Or automatically adjust the units based on the phone's settings instead?.
+
+<img width="621" alt="Screen Shot 2022-08-22 at 11 17 38 p m" src="https://user-images.githubusercontent.com/24994818/186068633-7328e5f7-fc70-40c0-bf49-5bb08c41648d.png">
+
+We will usually also have nonfunctional requirements. These are the requirements that are not directly related to a feature or behavior of the software system but are important nevertheless.
+
+Think of performance requirements: you don´t want to ruin the user experience with an unresponsive app.
+
+Also, you may need to address legal requirements. Does the app collect sensitive user data?. Does it allow users to browse the internet?.
+
+Documentation and support are also nonfunctional requirements. Your software may need to adhere to certain standards or regulations.
+
+<img width="655" alt="Screen Shot 2022-08-22 at 11 47 12 p m" src="https://user-images.githubusercontent.com/24994818/186072045-128313e7-c64f-408b-9ab7-ae22d353b784.png">
+
+Nonfunctional rrequirements are equally important. Ignoring them may cause serious legal issues and all sorts of other problems.
+
+Now, how do you handle this?. There are different ways to gather the requirements. The easiest way is to write them down. Here is an example from a project I have been working on.
+
+# Functional Requirements
+
+1. The app must store travel expenses organized by trips.
+2. Each trip must have a home currency. The default currency is fetched from the phone's settings. User setting must override the default home currency.
+3. Expenses can be entered in any of the supported currencies. The app must automatically convert the amounts to the home currency.
+
+# Nonfunctional requirements
+
+1. The app must run on iOS 9 and newer versions.
+2. The app must avoid unnecessary network roundtrips to reduce data roaming fees and preserve battery.
+3. The app must include the support email and the link to the app´s website.
+
+These are short, concise phrases in the form
+
+# The app/system must do something
+
+We don't want to write lenghthy descriptions but you can freely adapt this format to your needs.
+
+You should use some electronic form, but at early stages, pen and paper or a whiteboard are also fine. Just make sure you store them somehow, for example by taking photos.
+
+<img width="608" alt="Screen Shot 2022-08-23 at 12 02 54 a m" src="https://user-images.githubusercontent.com/24994818/186073979-85a72206-cc97-424d-8858-9122d37c8a39.png">
+
+These are also more formal ways, tools, and systems that support the requirements collection steps. I will not tal about these tools because this book is not about tools, but rather about principles.
+
+To summarize, the requirements collection step boils down to this:
+
+### Wee need to formulate what our software must do and which are the constraints and boundaries we need to consider.
+
+If we are using a waterfall approach, we need to clarify all the requirements in advance. For agile projects, it is perfectly acceptable if we continue without having all teh answers. We may even miss some of the questions. Agile lets us revisit and refine the requirements as we iterate through the software development process.
+
+<img width="657" alt="Screen Shot 2022-08-23 at 12 09 05 a m" src="https://user-images.githubusercontent.com/24994818/186074831-385b92ab-77c2-4817-b5ac-632e4d7ed277.png">
+
 # 18. [Mapping Requirements to Technical Descriptions](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 19. [Why do we need a Common Descriptive Language](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 20. [UML Basics and fundamental diagram types](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
