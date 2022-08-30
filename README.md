@@ -19,7 +19,7 @@
 15. [x] [15. Polymorphism](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#15-Polymorphism)
 16. [x] [16. Object-Oriented Analysis and Design](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#16-Object-Oriented-Analysis-and-Design)
 17. [x] [17. Collecting Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#17-Collecting-Requirements)
-18. [ ] [18. Mapping Requirements to Technical Descriptions](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#18-Mapping-Requirements-to-Technical-Descriptions)
+18. [x] [18. Mapping Requirements to Technical Descriptions](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#18-Mapping-Requirements-to-Technical-Descriptions)
 19. [ ] [19. Why do we need a Common Descriptive Language](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#19-Why-do-we-need-a-Common-Descriptive-Language)
 20. [ ] [20. UML Basics and fundamental diagram types](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#20-UML-Basics-and-fundamental-diagram-types)
 21. [ ] [21. The Use-Case Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#21-The-Use-Case-Diagram)
@@ -334,6 +334,78 @@ If we are using a waterfall approach, we need to clarify all the requirements in
 <img width="657" alt="Screen Shot 2022-08-23 at 12 09 05 a m" src="https://user-images.githubusercontent.com/24994818/186074831-385b92ab-77c2-4817-b5ac-632e4d7ed277.png">
 
 # 18. [Mapping Requirements to Technical Descriptions](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+Once we have gathered the requirements, we can feed them to the next step of the software design process. This is where we provide short, accurate descriptions of our system's functionality from the user's perspective.
+
+**One way documenting our system's features is through use-cases**. 
+
+# Use case
+
+A use-case needs a title. Something like:
+
+1. "Create New Trip", 
+2. "Edit expense" or 
+3. "Convert Currencies". 
+
+Note that each use case should represent a disctinct functionality.
+
+Next, we define the actor who is using this functionality. We call it a "actor" since it can represent a user who is interacting with tha app, but also a non-human entity, like another system.
+
+Then, we describe the details of this specific use-case. **This is called the scenario.**
+
+Here we should write one or more sentences that explain what and how the system works in this particular case. Here is an example:
+
+# title: "Create new trip", actor: "user of the mobile app"
+
+- The user can initiate the creation of a new trip from the main screen.
+- The title is mandatory. All the other settings are optional.
+- Optionally, the user can write a short description and set a start and end date for the trip.
+- The app assigns a default home currency based on the phone's settings. Users can override the default home currency with any of the supported currencies.
+- The app allows setting a budget for the trip. This setting is optional.
+- Also, the user can assign a custom thumbnail to a trip.
+- And the user can save the trip or cancel the trip creation process. 
+
+You can write this as a praragraph or as a bulleted list. The format does not really matter. **But it is important to avoid technical terms**. Again, this description should be understood by all stakeholders, includinh the end users.
+
+The format of the use-case document may vary from company to company. Some may include additional details, but that will not change the essence of it.
+
+The use-case document aims to provide a clear and human-friendly description. What a specific part of the software does and how the actor interacts with it. And this is a textual description. We will talk about the use-case diagrams later.
+
+# User stories
+
+User stories are another common way of describing certain features or parts of our application. User stories are shorter than use-case descriptions, usually only one-two sentence long. They typically follow this format:
+
+# As a < type of user >, I want > some goal > so that < some reason >.
+
+Examples:
+
+1. "as a user, I want to add notes to my expenses, so that I can identify them later on".
+2. "As a power user, I want to retrieve the app´s database file, so that I can inspect it on any computer".
+
+If you can't describe a user story in one or two sentences, you may need to split it into multiple, smaller user stories.
+
+# Epics
+
+These larger user stories are known as epics. Epics cover a bigger chunk of functionality, like in the following case:
+
+1, "As a traveler, I want to track my expenses while abroad, so that I don´t exceed my budget"
+
+This epic could be split into may user stories including these:
+
+1. "As a user, I want to create new trips, so that I can track each of my travels separately"
+2. As a business traveler, I want to tah my business trips, so that I can separate them from my private travels".
+
+User stories are often written on sticky notes or index cards. You will see them arranged on walls or tables during meetings and discussions.
+
+<img width="334" alt="Screen Shot 2022-08-29 at 9 39 04 p m" src="https://user-images.githubusercontent.com/24994818/187336393-19c3b60f-16f6-4338-932c-78a2f876b8fd.png">
+
+Unlike use-case descriptions, user stories don´t capture the feature details. They serve as discussion starters instead.
+
+User stories are about communication, and you will usually see them in agile projects. Whereas use-case descriptions are preferably used by Waterfall methodologies.
+
+# User stories: Agil.
+# Use-case: Waterfall.
+
 # 19. [Why do we need a Common Descriptive Language](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 20. [UML Basics and fundamental diagram types](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 21. [The Use-Case Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
