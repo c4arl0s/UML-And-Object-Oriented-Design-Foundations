@@ -375,7 +375,7 @@ The use-case document aims to provide a clear and human-friendly description. Wh
 
 User stories are another common way of describing certain features or parts of our application. User stories are shorter than use-case descriptions, usually only one-two sentence long. They typically follow this format:
 
-# As a < type of user >, I want > some goal > so that < some reason >.
+# As a <type of user>, I want <some goal> so that <some reason>.
 
 Examples:
 
@@ -422,6 +422,8 @@ We also need to visualize how the objects interact with each other.
 The development community faced this very same problem. The lack of a commonly accepted design language lead to the proliferation of different nonstandard approaches.
 
 We could also try to come up with a way to draw everything from classes to object interactions. Luckily, we don´t have to.
+
+# UML describes structure and behavior
 
 The Unified Modeling Language is a common design language that was released in 1997. UML. UML provides a set of standard diagram types that can be used to describe both the structure and the bahavior of software systems.
 
