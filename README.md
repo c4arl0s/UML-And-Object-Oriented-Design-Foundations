@@ -423,6 +423,8 @@ The development community faced this very same problem. The lack of a commonly a
 
 We could also try to come up with a way to draw everything from classes to object interactions. Luckily, we don´t have to.
 
+# UML describes structure and behavior
+
 The Unified Modeling Language is a common design language that was released in 1997. UML. UML provides a set of standard diagram types that can be used to describe both the structure and the bahavior of software systems.
 
  We will dig deeper into UML in the upcoming section.
