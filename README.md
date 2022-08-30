@@ -375,7 +375,7 @@ The use-case document aims to provide a clear and human-friendly description. Wh
 
 User stories are another common way of describing certain features or parts of our application. User stories are shorter than use-case descriptions, usually only one-two sentence long. They typically follow this format:
 
-# As a < type of user >, I want > some goal > so that < some reason >.
+# As a <type of user>, I want <some goal> so that <some reason>.
 
 Examples:
 
