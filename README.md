@@ -20,7 +20,7 @@
 16. [x] [16. Object-Oriented Analysis and Design](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#16-Object-Oriented-Analysis-and-Design)
 17. [x] [17. Collecting Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#17-Collecting-Requirements)
 18. [x] [18. Mapping Requirements to Technical Descriptions](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#18-Mapping-Requirements-to-Technical-Descriptions)
-19. [ ] [19. Why do we need a Common Descriptive Language](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#19-Why-do-we-need-a-Common-Descriptive-Language)
+19. [x] [19. Why do we need a Common Descriptive Language](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#19-Why-do-we-need-a-Common-Descriptive-Language)
 20. [ ] [20. UML Basics and fundamental diagram types](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#20-UML-Basics-and-fundamental-diagram-types)
 21. [ ] [21. The Use-Case Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#21-The-Use-Case-Diagram)
 22. [ ] [22. Visibility](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#22-Visibility)
@@ -403,10 +403,30 @@ Unlike use-case descriptions, user stories don´t capture the feature details. T
 
 User stories are about communication, and you will usually see them in agile projects. Whereas use-case descriptions are preferably used by Waterfall methodologies.
 
-# User stories: Agil.
-# Use-case: Waterfall.
+### User stories: Agil.
+### Use-case: Waterfall.
 
 # 19. [Why do we need a Common Descriptive Language](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+The first two steps of the object-oriented analysis don´t require any special tool or design language. We only need some text-editing software. Even a piece of paper or a whiteboard would be sufficient to collect the requirements and jot down (anotar) the use-cases or user stories.
+
+**The next steps require us to depict the classes that form our system**. How they behave and what attributes they need.
+
+| <img width="310" alt="Screen Shot 2022-08-30 at 9 14 49 a m" src="https://user-images.githubusercontent.com/24994818/187460878-026fc2f5-b949-40d1-b637-4b5c28a3cb41.png"> | <img width="138" alt="Screen Shot 2022-08-30 at 9 14 55 a m" src="https://user-images.githubusercontent.com/24994818/187460958-fb501991-d044-41b4-8333-74b9c23fe06b.png"> | <img width="155" alt="Screen Shot 2022-08-30 at 9 15 00 a m" src="https://user-images.githubusercontent.com/24994818/187461031-c10a0ce2-fbff-49a1-9834-1f4100e9fb02.png"> |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+We also need to visualize how the objects interact with each other.
+
+<img width="532" alt="Screen Shot 2022-08-30 at 9 18 24 a m" src="https://user-images.githubusercontent.com/24994818/187461479-983d32d0-3d33-4254-816c-eacb549cf6d7.png">
+
+The development community faced this very same problem. The lack of a commonly accepted design language lead to the proliferation of different nonstandard approaches.
+
+We could also try to come up with a way to draw everything from classes to object interactions. Luckily, we don´t have to.
+
+The Unified Modeling Language is a common design language that was released in 1997. UML. UML provides a set of standard diagram types that can be used to describe both the structure and the bahavior of software systems.
+
+ We will dig deeper into UML in the upcoming section.
+
 # 20. [UML Basics and fundamental diagram types](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 21. [The Use-Case Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 22. [Visibility](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
