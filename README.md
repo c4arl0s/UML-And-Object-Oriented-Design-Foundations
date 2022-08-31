@@ -21,7 +21,7 @@
 17. [x] [17. Collecting Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#17-Collecting-Requirements)
 18. [x] [18. Mapping Requirements to Technical Descriptions](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#18-Mapping-Requirements-to-Technical-Descriptions)
 19. [x] [19. Why do we need a Common Descriptive Language](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#19-Why-do-we-need-a-Common-Descriptive-Language)
-20. [ ] [20. UML Basics and fundamental diagram types](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#20-UML-Basics-and-fundamental-diagram-types)
+20. [x] [20. UML Basics and fundamental diagram types](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#20-UML-Basics-and-fundamental-diagram-types)
 21. [ ] [21. The Use-Case Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#21-The-Use-Case-Diagram)
 22. [ ] [22. Visibility](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#22-Visibility)
 23. [ ] [23. Associations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#23-Associations)
