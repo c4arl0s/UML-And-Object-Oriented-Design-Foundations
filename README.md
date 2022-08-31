@@ -365,6 +365,8 @@ Here we should write one or more sentences that explain what and how the system 
 - Also, the user can assign a custom thumbnail to a trip.
 - And the user can save the trip or cancel the trip creation process. 
 
+# Avoid technical terms.
+
 You can write this as a praragraph or as a bulleted list. The format does not really matter. **But it is important to avoid technical terms**. Again, this description should be understood by all stakeholders, includinh the end users.
 
 The format of the use-case document may vary from company to company. Some may include additional details, but that will not change the essence of it.
@@ -430,6 +432,55 @@ The Unified Modeling Language is a common design language that was released in 1
  We will dig deeper into UML in the upcoming section.
 
 # 20. [UML Basics and fundamental diagram types](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+Understanding a software system just by looking at its source code can be very time-consuming, and communicating ideas about software design or business processes is even harder if there is no commonly accepted way to do it.
+
+The Unified Modeling Language - in short UML - was introduced to solve this problem. UML is not a textual programming language, but rather a grapgical notation; a set of diagrams that help in designing and communicating software systems.
+
+We can use these diagrams to describe the objects that form a system and their interactions. UML has many diagram types. We will be discussing the most common ones. 
+
+# The use-case diagram describes the functional model of a system. 
+
+That is, the functionality of a system from the user's point of view.
+
+<img width="492" alt="Screen Shot 2022-08-30 at 10 14 15 p m" src="https://user-images.githubusercontent.com/24994818/187584735-ab205f00-3935-4e60-aa9f-40168b22e5f9.png">
+
+# UML can describe structure.
+
+To describe the structure of a system. UML provides structural diagrams. We will talk about the class diagram, which can be used to describe the structure of a system in terms of objects, attributes, operations, and relations.
+
+<img width="419" alt="Screen Shot 2022-08-30 at 10 17 22 p m" src="https://user-images.githubusercontent.com/24994818/187585096-0f8e6ed9-7986-4290-9589-3a402cf73856.png">
+
+# UML can describe dynamic behavior.
+
+UML lets us model dynamic behavior, too. The behavioral diagrams describe the functionality of the system, focusing on what happens and the interactions between objects.
+
+<img width="502" alt="Screen Shot 2022-08-30 at 10 21 36 p m" src="https://user-images.githubusercontent.com/24994818/187585564-37841ab8-a2e6-45cf-be73-b7cd01ae0a04.png">
+
+We will talk about the actual diagrams shortly.
+
+The best part about UML is that it is independent of any particular programming language. We can start coding an object-oriented software based on UML diagrams. If those diagrams are detailed enough, they can be converted to source code.
+
+| <img width="270" alt="Screen Shot 2022-08-30 at 10 26 42 p m" src="https://user-images.githubusercontent.com/24994818/187586120-ca289486-3878-4d0f-9be6-7a16a78c9da1.png"> | <img width="255" alt="Screen Shot 2022-08-30 at 10 29 53 p m" src="https://user-images.githubusercontent.com/24994818/187586473-1c93e165-34dc-4655-b2af-2a33cca4f871.png"> |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <img width="260" alt="Screen Shot 2022-08-30 at 10 30 21 p m" src="https://user-images.githubusercontent.com/24994818/187586517-9f5bc343-3802-45d9-b7dd-f3317fd2067e.png"> | <img width="290" alt="Screen Shot 2022-08-30 at 10 34 52 p m" src="https://user-images.githubusercontent.com/24994818/187587069-9c872643-5b18-4c74-bfe9-0ef22bd7dddc.png"> |
+
+Now, let0s see some ways of using UML in real-life.
+
+We can quickly draw a diagram to sketch a specific part of a software or a new functionality. I did that myself on a numerous occasions. Whenever something was unclear, I started to sketch UML diagrams before writing a single line of code.
+
+The benefit was that I not only understood what I should implement, I also had a design. A documentation that could be used to communicate my ideas with other team members.
+
+# Reverse Engineering
+
+Another frequent use of UML is drawing diagrams from existing code. This technique is called reverse engineering, and it helps to understand and document a system.
+
+# Detailed bluprint
+
+We can also use UML to create the detailed bluprint of a system. While sketches focus only on the essential aspects of a system, the blueprint is about completeness. Detailed UML blueprints are usually required for software development using a Waterfall-approach and less frequently for Agile projects.
+
+You can use UML diagrams to describe any system that is developed using an object-oriented programming language. UML has become so popular that it is also used for non-object oriented projects.
+
 # 21. [The Use-Case Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 22. [Visibility](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 23. [Associations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
