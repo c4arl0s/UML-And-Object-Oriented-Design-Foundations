@@ -437,6 +437,8 @@ Understanding a software system just by looking at its source code can be very t
 
 The Unified Modeling Language - in short UML - was introduced to solve this problem. UML is not a textual programming language, but rather a grapgical notation; a set of diagrams that help in designing and communicating software systems.
 
+<img width="592" alt="Screen Shot 2022-08-31 at 8 33 48 p m" src="https://user-images.githubusercontent.com/24994818/187813601-9be5b22c-302f-4e13-9148-083f266d096e.png">
+
 We can use these diagrams to describe the objects that form a system and their interactions. UML has many diagram types. We will be discussing the most common ones. 
 
 # The use-case diagram describes the functional model of a system. 
@@ -475,7 +477,7 @@ The benefit was that I not only understood what I should implement, I also had a
 
 Another frequent use of UML is drawing diagrams from existing code. This technique is called reverse engineering, and it helps to understand and document a system.
 
-# Detailed bluprint
+# Detailed blueprint
 
 We can also use UML to create the detailed bluprint of a system. While sketches focus only on the essential aspects of a system, the blueprint is about completeness. Detailed UML blueprints are usually required for software development using a Waterfall-approach and less frequently for Agile projects.
 
