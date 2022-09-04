@@ -484,6 +484,59 @@ We can also use UML to create the detailed bluprint of a system. While sketches 
 You can use UML diagrams to describe any system that is developed using an object-oriented programming language. UML has become so popular that it is also used for non-object oriented projects.
 
 # 21. [The Use-Case Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+let´s start with the use-case diagram. It is one of the simplest UML diagrams.
+
+Its purpose is to visualize the functional requirements of the system. Use-case diagrams show groups of related use-cases. Sometimes they may include all the use-cases.
+
+The result is an overview of the system that may include several written use-cases. You will rarely create use-case diagrams for a single use-case description. 
+
+To represent a use-case, we draw an oval in the middle of the screen and put the title of the use case in it.
+
+<img width="252" alt="Screen Shot 2022-09-03 at 9 51 57 p m" src="https://user-images.githubusercontent.com/24994818/188294948-4282f5a4-ad4c-459b-8cfe-b137c81dd545.png">
+
+"Create a Trip Entry". "Edit Trip". "Export App Database". - These are examples of use-cases from our Travel Expense app mentioned before.
+
+<img width="254" alt="Screen Shot 2022-09-03 at 9 54 48 p m" src="https://user-images.githubusercontent.com/24994818/188295007-99f1ba06-aa2f-4ec3-81d7-7881cc30ac0f.png">
+
+We use stick figures to represent the actors. As you may recall, actors are human beings or other systems that may interact with our system.
+
+We draw the stick person to the left or the right of the diagram. The actor's name goes below the stick figure.
+
+<img width="142" alt="Screen Shot 2022-09-03 at 9 56 51 p m" src="https://user-images.githubusercontent.com/24994818/188295051-aa5c295f-fe1c-4a2c-b88d-4a13d8704261.png">
+
+We usually draw the primary actors on the left side and the secondary ones on the right side of the use-case diagram.
+
+Next, we draw lines to represent the interaction between an actor and a use-case. A mobile user can create or edit a trip entry, but he cannot export the app's database. The power user can perform all these actions.
+
+<img width="492" alt="Screen Shot 2022-09-03 at 10 00 55 p m" src="https://user-images.githubusercontent.com/24994818/188295137-041adc11-abd6-4d12-b306-91f1bd53ed8e.png">
+
+We need to visualize our system's boundaries if it interacts with other systems. For that, we draw a frame around all use-cases and actors that belong to a given system.
+
+Let's say that we are relying on an external iCloud-based storage. I will represent this external system as a separate actor on the right side. I even changed its visual representation to show that it is not a human actor. Most tools allow you to do that.
+
+<img width="657" alt="Screen Shot 2022-09-03 at 10 08 32 p m" src="https://user-images.githubusercontent.com/24994818/188295329-a6642155-caa7-4794-90f8-12c1334346ed.png">
+
+The "Create a Trip Entry" and the "Edit trip" use cases would rely on the cloud to back up their data. So, I connect these use-cases with the external system.
+
+You can quickly tell what our system does just by looking at this use-case diagram.
+
+<img width="656" alt="Screen Shot 2022-09-03 at 10 10 51 p m" src="https://user-images.githubusercontent.com/24994818/188295379-a3c0adc0-bdcd-4c75-a8d6-ecceda866822.png">
+
+This system lets users create new trips and edit existing ones. Power users can even export the database. The app relies on an external cloud system to store its data. 
+
+Such a simple diagram makes it clear what the system does and what it does not do. A customer or a user can easily see if needed features are missing. The absence of use cases shows what the system does not do.
+
+The UML use-case diagram includes other artifacts and relationships between use-cases. We are going to ignore them as they tend to overcomplicate our design and the benefits are questionable.
+
+You can´t go wrong if you focus on the actors, the use-cases, and their interactions. You will be able to easily create your own use-case diagrams and communicate your ideas in a clear and concise way.
+
+### Use-case diagrams provide an easy-to-understand overview of the features of our system.
+
+They are not a replacement for written use-case descriptions, though. Use-case descriptions include more information to ensure that we don't miss any of the important details or requirements.
+ 
+
+
 # 22. [Visibility](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 23. [Associations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 24. [Generalization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
