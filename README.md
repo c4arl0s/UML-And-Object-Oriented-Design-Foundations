@@ -22,7 +22,8 @@
 18. [x] [18. Mapping Requirements to Technical Descriptions](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#18-Mapping-Requirements-to-Technical-Descriptions)
 19. [x] [19. Why do we need a Common Descriptive Language](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#19-Why-do-we-need-a-Common-Descriptive-Language)
 20. [x] [20. UML Basics and fundamental diagram types](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#20-UML-Basics-and-fundamental-diagram-types)
-21. [ ] [21. The Use-Case Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#21-The-Use-Case-Diagram)
+21. [x] [21. The Use-Case Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#21-The-Use-Case-Diagram)
+   - [x] [The Class Diagram]() 
 22. [ ] [22. Visibility](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#22-Visibility)
 23. [ ] [23. Associations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#23-Associations)
 24. [ ] [24. Generalization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#24-Generalization)
@@ -535,7 +536,65 @@ You can´t go wrong if you focus on the actors, the use-cases, and their interac
 
 They are not a replacement for written use-case descriptions, though. Use-case descriptions include more information to ensure that we don't miss any of the important details or requirements.
  
+# [The Class Diagram]()
 
+A class is represented on the class diagram as a rectangle with threee compartments. First, we need to list the class's name.
+
+<img width="208" alt="Screen Shot 2022-09-03 at 10 27 43 p m" src="https://user-images.githubusercontent.com/24994818/188295798-4d7e1688-baf8-4a4d-bb2b-ea65454a0ce7.png">
+
+When naming our classes, we must adhere to some rules. These rules are known as naming conventions. A class name should be a noun in the singular, and it needs to start with an uppercase letter.
+
+If the name consists of multiple words, we need to uppercase each world, like in this example: 
+
+<img width="303" alt="Screen Shot 2022-09-03 at 10 30 24 p m" src="https://user-images.githubusercontent.com/24994818/188295873-870cbd12-bce3-4339-a1dc-77db6214def3.png">
+
+### Attributes.
+
+<img width="307" alt="Screen Shot 2022-09-03 at 10 31 37 p m" src="https://user-images.githubusercontent.com/24994818/188295906-6a1f3257-1b96-44e8-93df-b8d303b5ede3.png">
+
+It is useful to specify the type of the attribute. We can do that by writting the data type after the attribute´s name separated by a colon. So, here is our Trip class with the attribute names and types:
+
+<img width="307" alt="Screen Shot 2022-09-03 at 10 33 11 p m" src="https://user-images.githubusercontent.com/24994818/188296005-525f352b-6d94-4725-b008-0a9f51c63060.png">
+
+### Operations
+
+This is where we list the class´s methods. Method names should be verbs in lowerCamelCase.
+
+<img width="309" alt="Screen Shot 2022-09-03 at 10 34 47 p m" src="https://user-images.githubusercontent.com/24994818/188296037-cbdd9181-3d6b-4f67-9b4b-09c6ec331886.png">
+
+We can also specify method arguments. The parameters appear within the parenthesis as name-data type pairs, like in `setName(value: String)` 
+
+<img width="304" alt="Screen Shot 2022-09-03 at 10 36 03 p m" src="https://user-images.githubusercontent.com/24994818/188296069-9b523b8d-a3d9-45bf-832f-156859921e7b.png">
+
+To show a method returns something, we add a colon after the closing parenthesis followed by the return type:
+
+```swift
+name(): String
+```
+
+And we can also have methods that have arguments and a return type.
+
+<img width="300" alt="Screen Shot 2022-09-03 at 10 37 48 p m" src="https://user-images.githubusercontent.com/24994818/188296129-bc6c4b8f-706f-4aea-9503-da29ab640015.png">
+
+### Operations
+
+This is where we list the class´s methods. Method names should be verbs in lowerCamelCase.
+
+<img width="309" alt="Screen Shot 2022-09-03 at 10 34 47 p m" src="https://user-images.githubusercontent.com/24994818/188296037-cbdd9181-3d6b-4f67-9b4b-09c6ec331886.png">
+
+We can also specify method arguments. The parameters appear within the parenthesis as name-data type pairs, like in `setName(value: String)` 
+
+<img width="304" alt="Screen Shot 2022-09-03 at 10 36 03 p m" src="https://user-images.githubusercontent.com/24994818/188296069-9b523b8d-a3d9-45bf-832f-156859921e7b.png">
+
+To show a method returns something, we add a colon after the closing parenthesis followed by the return type:
+
+```swift
+name(): String
+```
+
+And we can also have methods that have arguments and a return type.
+
+<img width="300" alt="Screen Shot 2022-09-03 at 10 37 48 p m" src="https://user-images.githubusercontent.com/24994818/188296129-bc6c4b8f-706f-4aea-9503-da29ab640015.png">
 
 # 22. [Visibility](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 23. [Associations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
