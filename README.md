@@ -538,6 +538,78 @@ They are not a replacement for written use-case descriptions, though. Use-case d
 
 
 # 22. [Visibility](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+Now, let´s talk about visibility. UML allows us control who can access the attributes and the methods or our classes.
+
+We have the following visibility levels in UML.
+
+# + means public visibility.
+
+A class method or attribute marked as public can be used by code outside of the project.
+
+# - denotes private access.
+
+Private attributes and methods can only be used within the class that defines them. Elements marked as private can't be accessed directly from other classes.
+
+# UML uses # to mark an element as protected.
+
+Protected visibility means that only child classes (and the defining class) will be able to access that attribute or method.
+
+# ~ denotes package visibility
+
+Which makes sense in some programming languages that let us group our code into logical units and provide a namespace for this group. Using package visibility, we make our elements available within its enclosing package.
+
+UML provides these visibility tags, but its up to us to adapt it to the language we are using. There is one rule that is commonly applicable to all object-oriented languages: **You should only expose as much as needed and hide everything else**.
+
+Class attributes will usually have private or protected access. We should provide public setters and getters instead of allowing everybody to access our class´s data. This lets us control what the callers do with our class´s attributes.
+
+In our `Trip` class, we could make the name attribute public. Callers could set and retrieve it, which seems to work as expected.
+
+<img width="309" alt="Screen Shot 2022-09-04 at 5 12 43 p m" src="https://user-images.githubusercontent.com/24994818/188335389-db248da4-8438-43f0-bd86-455e461aa096.png">
+
+But, what if we need to make sure that a Trip´s name is never shorter that say three characters?.
+
+```swift
+name.length >= 3
+```
+
+There is no way to enforce this requirement.
+
+Another example. The trip´s start date needs to be earlier that its end date. Yet, callers can freely set any start or end date.
+
+<img width="305" alt="Screen Shot 2022-09-04 at 5 18 07 p m" src="https://user-images.githubusercontent.com/24994818/188335540-a9a7d6b7-db88-4e55-a1ae-30d20eb71c34.png">
+
+```swift
+name.length >= 3
+endsAt >= startsAt
+```
+
+I´m going to change the visibility of all these attributes to private. Now, we can access them exclusively from within the class`s own methods. After this change, other objects can´t set or retrieve these attributes. They are, well, private to the Trip class.
+
+<img width="301" alt="Screen Shot 2022-09-04 at 5 25 22 p m" src="https://user-images.githubusercontent.com/24994818/188335745-158614b0-ba3e-44a0-8119-76ba70d96759.png">
+
+Awesome! But then, ho do we set, retrieve or modify them?.
+
+Here is the solution: I provide public getters and setters for each of these attributes:
+
+<img width="306" alt="Screen Shot 2022-09-04 at 5 34 40 p m" src="https://user-images.githubusercontent.com/24994818/188335981-da997649-f9d7-4f6b-93eb-a42f83432819.png">
+
+> I will change getName name method to name, as objective-c convention.
+
+Now we can check whether the name is at least three characters long by validating the name parameter in the `setName()` method. If it is shorter, we just print a warning message and return.
+
+[insert code, check Visibility.playground]
+
+Also, we validate the start and the end date in the corresponding setters.
+
+[insert code, check Visibility.playground]
+
+We are now in full control of our class´s internal data. Setters let us check the input argument, and getters allow us to modify the value before returning it. 
+
+> For example, we could return a date in the user´s timezome.
+
+So far, we have seen how to represent a single class. Class diagrams let us also show the relationships between the classes in our system. We will talk about relationships next.
+
 # 23. [Associations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 24. [Generalization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 25. [Dependency, Aggregation, composition & Realization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
