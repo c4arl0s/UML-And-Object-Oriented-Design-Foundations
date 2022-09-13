@@ -24,8 +24,8 @@
 20. [x] [20. UML Basics and fundamental diagram types](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#20-UML-Basics-and-fundamental-diagram-types)
 21. [x] [21. The Use-Case Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#21-The-Use-Case-Diagram)
    - [x] [The Class Diagram]() 
-22. [ ] [22. Visibility](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#22-Visibility)
-23. [ ] [23. Associations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#23-Associations)
+22. [x] [22. Visibility](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#22-Visibility)
+23. [x] [23. Associations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#23-Associations)
 24. [ ] [24. Generalization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#24-Generalization)
 25. [ ] [25. Dependency, Aggregation, composition & Realization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#25-Dependency-Aggregation-composition--Realization)
 26. [ ] [26. Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#26-Sequence-Diagrams)
@@ -670,6 +670,62 @@ We are now in full control of our class´s internal data. Setters let us check t
 So far, we have seen how to represent a single class. Class diagrams let us also show the relationships between the classes in our system. We will talk about relationships next.
 
 # 23. [Associations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+The next logical step after identifiying the key classes in our system is figuring out the relationships between them. Use-cases or user stories will help us during this process.
+
+Here is one of the functional requirements of the TravelExpense app.
+
+"As a traveler, I want to track my expenses while abroad, so that I don´t exceed my budget"
+
+We have a Trip and an Expense class. Each trip will include it´s travel expenses. So, there needs to be some relationship between the Trip and the Expense class.
+
+To express this relationship, we draw a solid line between these classes.
+
+<img width="482" alt="Screen Shot 2022-09-12 at 8 59 03 p m" src="https://user-images.githubusercontent.com/24994818/189790696-5d6555f2-374b-4bb2-a040-af18fa6c479c.png">
+
+**This line represents an association**. The association tells us that the classes refer to each other.
+
+We can be more specific here. The Trip class needs to know about its expenses. 
+
+# Should the Expense class also know about the Trip class ?
+
+We have already talked about the drawbacks of tightly coupled systems. **Tight coupling is something that you should definitely try to avoid**. Let me ilustrate the issue it causes.
+
+The Trip refers to the Expense class. That is fine, since a trip can have expenses associated with it. What happens if also the Expense refers to the Trip class?.
+
+<img width="466" alt="Screen Shot 2022-09-12 at 9 06 28 p m" src="https://user-images.githubusercontent.com/24994818/189791466-1b3cb39c-7d89-43d0-944a-0646c23d2080.png">
+
+Because of this reference, if we tried to use the Expense class in other parts of the system, we would need to also bring the Trip class with it.
+
+<img width="475" alt="Screen Shot 2022-09-12 at 9 08 51 p m" src="https://user-images.githubusercontent.com/24994818/189791688-37556157-5b4f-410e-8c21-0de34dbe5d10.png">
+
+This does not make sense, as we should be able to use an Expense without a Trip.
+
+**UML let us express direct associations**. By drawing a solid line that ends with an open arrohead, we show that only one of the classes refers to the other one. The arrow points to the class that is referred to by the other class.
+
+Let's change it to a directed association.
+
+<img width="470" alt="Screen Shot 2022-09-12 at 9 14 58 p m" src="https://user-images.githubusercontent.com/24994818/189792367-762b4e65-8c36-4d64-b5f6-4dacd966fcd8.png">
+
+Now it shows that the Expanse is associated with the Trip, but the Expense class does not know anything about the Trip class.
+
+A Trip will usually have multiple expenses. We can represent the multiplicity of associated objects as follows:
+
+# * - a Trip can have zero or more Expenses.
+# 1 - a Trip must have exactly one homeCurrency
+# 0..1 - a Trip may or may not have a single note
+
+<img width="665" alt="Screen Shot 2022-09-12 at 9 20 58 p m" src="https://user-images.githubusercontent.com/24994818/189793137-d0ab8e93-e07c-4013-b427-f3f00bb48265.png">
+
+Associations can show multiplicities at both ends of the line. 
+
+# The default multiplicity is one.
+
+If there is no multiplicity shown, you can safely assume it is one. We can also display the name of the class property for the given application. 
+
+<img width="671" alt="Screen Shot 2022-09-12 at 9 29 21 p m" src="https://user-images.githubusercontent.com/24994818/189794146-3bd4e881-71b5-45a3-91ae-b1c96a9593ec.png">
+
+The association is not the only kind of relationship we can have between classes. Next, we are going to talk about generalization.
 # 24. [Generalization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 25. [Dependency, Aggregation, composition & Realization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 26. [Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
