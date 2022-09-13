@@ -691,7 +691,11 @@ We can be more specific here. The Trip class needs to know about its expenses.
 
 We have already talked about the drawbacks of tightly coupled systems. **Tight coupling is something that you should definitely try to avoid**. Let me ilustrate the issue it causes.
 
+> Coupling. As opposed to cohesion, the coupling of a module in a system is related to the amount of connection between the elements of a module and the elements of the rest of the system. The interconnections may be direct or transitive. So, adding a relationship, whether internal to the module or belonging to its set of outer relationships, can never decrease coupling.
+
 The Trip refers to the Expense class. That is fine, since a trip can have expenses associated with it. What happens if also the Expense refers to the Trip class?.
+
+> Cohesion. Cohesion is related to the degree and not the extent with which the elements of a module are tied to each other. Thus, cohesion measures are normalized.
 
 <img width="466" alt="Screen Shot 2022-09-12 at 9 06 28 p m" src="https://user-images.githubusercontent.com/24994818/189791466-1b3cb39c-7d89-43d0-944a-0646c23d2080.png">
 
