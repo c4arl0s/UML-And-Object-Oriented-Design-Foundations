@@ -26,7 +26,7 @@
    - [x] [The Class Diagram]() 
 22. [x] [22. Visibility](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#22-Visibility)
 23. [x] [23. Associations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#23-Associations)
-24. [ ] [24. Generalization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#24-Generalization)
+24. [x] [24. Generalization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#24-Generalization)
 25. [ ] [25. Dependency, Aggregation, composition & Realization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#25-Dependency-Aggregation-composition--Realization)
 26. [ ] [26. Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#26-Sequence-Diagrams)
 27. [ ] [27. Activity Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#27-Activity-Diagrams)
@@ -731,6 +731,33 @@ If there is no multiplicity shown, you can safely assume it is one. We can also 
 
 The association is not the only kind of relationship we can have between classes. Next, we are going to talk about generalization.
 # 24. [Generalization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+In UML, we use generalization to express that one model element is based on another model element. Generalization is represented as a solid line with a hollow arrowhead that points to the parent.
+
+<img width="166" alt="Screen Shot 2022-11-03 at 1 37 50 p m" src="https://user-images.githubusercontent.com/24994818/199817996-b2e9c5bc-3848-4f0a-b002-99701a6df7c6.png">
+
+Let's say that we need a special `Trip` class for our business trips. `BussinessTrip` would inherit from the `Trip` class and this is how we represent in UML:
+
+<img width="232" alt="Screen Shot 2022-11-03 at 1 39 28 p m" src="https://user-images.githubusercontent.com/24994818/199818274-ba160053-f086-40e1-beb6-df803609b724.png">
+
+Because `BussinessTrip` inherits everything from its parent, we must only specify the attributes and operations that are specifi to the child.
+
+A parent can have multiple childre.
+
+<img width="439" alt="Screen Shot 2022-11-03 at 1 40 58 p m" src="https://user-images.githubusercontent.com/24994818/199818549-a79ec201-6d89-472c-a7ef-ec98e99885fd.png">
+
+And we can also have child classes that inherit from different parents.
+
+<img width="449" alt="Screen Shot 2022-11-03 at 1 42 48 p m" src="https://user-images.githubusercontent.com/24994818/199818894-f61f00cd-ac58-4a04-a6b6-1f77b95626f0.png">
+
+Some programming languages support multiple inheritance; C++, Perl, Python - just to name a few. 
+
+Many modern programming languages only allow single inheritance, that is, inheriting from one parent class. Single inheritance reduces complexity and avoids the ambiguity that comes with multiple inheritance.
+
+> Some argue that multiple inheritance has more benefits than drawbacks. However, it is certainly easier to make mistakes when using multiple inheritance.
+
+UML does not restrict generalization to classes. It can also be used in use-case or components diagrams. This let us indicate that a child element receives it's paren's attributes, operations and relationships.
+
 # 25. [Dependency, Aggregation, composition & Realization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 26. [Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 27. [Activity Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
