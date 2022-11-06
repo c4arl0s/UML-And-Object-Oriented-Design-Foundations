@@ -27,7 +27,7 @@
 22. [x] [22. Visibility](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#22-Visibility)
 23. [x] [23. Associations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#23-Associations)
 24. [x] [24. Generalization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#24-Generalization)
-25. [ ] [25. Dependency, Aggregation, composition & Realization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#25-Dependency-Aggregation-composition--Realization)
+25. [x] [25. Dependency, Aggregation, composition & Realization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#25-Dependency-Aggregation-composition--Realization)
 26. [ ] [26. Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#26-Sequence-Diagrams)
 27. [ ] [27. Activity Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#27-Activity-Diagrams)
 28. [ ] [28. Statechart diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#28-Statechart-diagrams)
@@ -759,6 +759,70 @@ Many modern programming languages only allow single inheritance, that is, inheri
 UML does not restrict generalization to classes. It can also be used in use-case or components diagrams. This let us indicate that a child element receives it's paren's attributes, operations and relationships.
 
 # 25. [Dependency, Aggregation, composition & Realization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+# Dependency
+
+We talk about a dependency relationship if changes in one of the classes may cause changes to the other.
+
+In UML, dependency is represented as a dashed line that ends with an open arrowhead. The arrow points to the dependency.
+
+<img width="450" alt="Screen Shot 2022-11-04 at 1 26 26 p m" src="https://user-images.githubusercontent.com/24994818/200059458-bc656308-9a28-4798-90c3-b483aa337e96.png">
+
+A dependency is a directed relationship.
+
+Dependency is often confused with Association, but there is a big difference. Association indicates that a class has an attribute of the other class's type.
+
+<img width="410" alt="Screen Shot 2022-11-04 at 1 32 04 p m" src="https://user-images.githubusercontent.com/24994818/200060018-4776df4c-7fc6-441b-8d6d-4022f9a44fd0.png">
+
+Whereas dependency is usually created when a class receives a reference to the other class (for instance, through a member function parameter).
+
+<img width="426" alt="Screen Shot 2022-11-04 at 1 35 56 p m" src="https://user-images.githubusercontent.com/24994818/200060527-53fdf42f-fbc3-4eb6-a293-aa0904a79a13.png">
+
+# Aggregarion and Composition
+
+Aggregation represents a **part-whole relationship** and is drawn as a solid line with a hollow diamond at the owner's end.
+
+<img width="438" alt="Screen Shot 2022-11-04 at 1 42 39 p m" src="https://user-images.githubusercontent.com/24994818/200061559-7da2ed12-f857-4808-be8b-747f00edac30.png">
+
+This relationship is considered redundant because it expresses the same thing as the association. So, these two diagrams are equivalent:
+
+<img width="437" alt="Screen Shot 2022-11-04 at 1 48 53 p m" src="https://user-images.githubusercontent.com/24994818/200062535-6c64862b-2de4-46e2-859c-46748323c144.png">
+
+Composition is a stronger form of association. It shows that the parts live and die with the whole. In other words, composition implies ownership: when the owning object is destroyed, the contained objects will be destroyed, too.
+
+<img width="436" alt="Screen Shot 2022-11-04 at 1 57 39 p m" src="https://user-images.githubusercontent.com/24994818/200063910-5241c4d0-684f-43f6-9550-1e6986375baa.png">
+
+<img width="439" alt="Screen Shot 2022-11-04 at 1 58 29 p m" src="https://user-images.githubusercontent.com/24994818/200064058-10570050-c0c3-4a41-8db7-f3d20783f514.png"> 
+<img width="437" alt="Screen Shot 2022-11-04 at 1 58 36 p m" src="https://user-images.githubusercontent.com/24994818/200064086-7f777c97-0c1f-4ef7-aae5-e58d49b89478.png">
+
+The composition is represented as a filled diamond on the owner's end connected with a solid line with the contained class.
+
+<img width="445" alt="Screen Shot 2022-11-04 at 2 04 19 p m" src="https://user-images.githubusercontent.com/24994818/200064904-cf851761-ead9-4b46-8452-86717db80165.png">
+
+The Expenses of a trip can't exist without the Trip. If we delete the Trip instance, 
+
+<img width="440" alt="Screen Shot 2022-11-04 at 2 05 37 p m" src="https://user-images.githubusercontent.com/24994818/200065060-94e1a001-4599-4206-addc-2ef503592a22.png">
+
+its expenses are going to be removed, too:
+
+<img width="445" alt="Screen Shot 2022-11-04 at 2 06 20 p m" src="https://user-images.githubusercontent.com/24994818/200065159-c2b20b97-b2f5-4b21-93ea-490b36398775.png">
+
+# Realization
+
+Realization indicates that a class implements that behavior specified by another model element.
+
+It is represented as a hollow triangle on the interface end connected with dashed lines with the implementer classes.
+
+<img width="203" alt="Screen Shot 2022-11-04 at 2 34 34 p m" src="https://user-images.githubusercontent.com/24994818/200069266-fcb42f7a-673b-42f0-9a3a-7455d2738b64.png">
+
+We could specify an interface to ensure that all current and upcoming trip classes provide a common set of methods. This is a useful feature that allows polymorphic behavior.
+
+<img width="212" alt="Screen Shot 2022-11-04 at 2 36 39 p m" src="https://user-images.githubusercontent.com/24994818/200069559-928ce99c-13bf-4028-bd94-462cfda64c1b.png">
+
+Here is a quick summary of the relationships and their graphical representation:
+
+<img width="633" alt="Screen Shot 2022-11-05 at 5 59 54 p m" src="https://user-images.githubusercontent.com/24994818/200147726-b8655919-84bc-488b-b300-cdc1d7e19cbf.png">
+
 # 26. [Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 27. [Activity Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 28. [Statechart diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
