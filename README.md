@@ -28,7 +28,7 @@
 23. [x] [23. Associations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#23-Associations)
 24. [x] [24. Generalization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#24-Generalization)
 25. [x] [25. Dependency, Aggregation, composition & Realization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#25-Dependency-Aggregation-composition--Realization)
-26. [ ] [26. Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#26-Sequence-Diagrams)
+26. [x] [26. Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#26-Sequence-Diagrams)
 27. [ ] [27. Activity Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#27-Activity-Diagrams)
 28. [ ] [28. Statechart diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#28-Statechart-diagrams)
 29. [ ] [29. Case Study: Designing a Note-Taking App](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#29-Case-Study-Designing-a-Note-Taking-App)
@@ -824,6 +824,52 @@ Here is a quick summary of the relationships and their graphical representation:
 <img width="633" alt="Screen Shot 2022-11-05 at 5 59 54 p m" src="https://user-images.githubusercontent.com/24994818/200147726-b8655919-84bc-488b-b300-cdc1d7e19cbf.png">
 
 # 26. [Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+Use case and class diagrams are static diagrams. They are great at representing the structure of our system.
+
+What if we need to show how the objects interact with each other?. When are objects created and for how long are they around?. Static diagrams can´t answer these questions.
+
+UML provides dynamic diagrams to represent how objects communicate with each other. The most common dynamic diagram is the sequence diagrams.
+
+> We use the sequence diagram to describe the flow of logic in one particular scenario.
+
+A sequence diagram starts by drawing boxes at the top of the page. Each box represents an object. Since these are objects, we name them differently. "aTrip" instead of "Trip" and "anExpense" rather than "Expense".
+
+<img width="337" alt="Screen Shot 2022-11-16 at 9 42 20 a m" src="https://user-images.githubusercontent.com/24994818/202226080-02e16505-af1c-4616-b06c-cea92da8ab36.png">
+
+We can also display the type after the instance´s name separared by a colon. This may be helpful in some cases:
+
+ <img width="409" alt="Screen Shot 2022-11-16 at 9 42 47 a m" src="https://user-images.githubusercontent.com/24994818/202226190-b73ebff3-8f8d-404d-be53-5712d68cf2eb.png">
+
+The lifeline of an object is represented by the dotted lines beneath each box. This line shows the time the instance exists during the scenario. The sequence diagram also lets us show the message sent from one object to the other. A message is basically a method call.
+
+<img width="403" alt="Screen Shot 2022-11-16 at 9 46 19 a m" src="https://user-images.githubusercontent.com/24994818/202227005-54de3d69-0017-4bc1-abe4-ecd70f2367c0.png">
+
+Now, let me illustrate the various messages in a practica example.
+
+I will be using StartUML, a UML diagramming software. Let's assume that we have a `persistenceManager` object. This objetc is responsible for storing and retrieving entities in the app´s local database. 
+
+The `persistenceManager`needs to create and store a `TripEntity` instance. First, I add the `TripEntity` object. The `persistanceManager` instance sends a create message to initiate a `tripEntity` object. The create message is represented as a dashed line with a stick arrow head.
+
+<img width="479" alt="Screen Shot 2022-11-16 at 2 23 52 p m" src="https://user-images.githubusercontent.com/24994818/202286559-973fde82-95b9-4886-b168-0a44a3bd9499.png">
+
+Next, the persistence manager sends a regular message to the already created trip entity. This message corresponds to calling the `addNote(nod: String` method on the `TripEntity` instance. A regular message is shown as a solid line with a filled arrowhead. We can add parameters to our message if we wish:
+
+<img width="475" alt="Screen Shot 2022-11-16 at 2 37 53 p m" src="https://user-images.githubusercontent.com/24994818/202288994-2adf204d-2e6f-4583-a8a4-22db991dccf5.png">
+
+Although we could display the return message, only do it if it is important. Return messages are implicit for synchronous messages, so we don´t have to display them.
+
+Asynchronous messages are drawn as solid lines with a stick arrowhead. The controller object sends an async `save(trip: Trip)` message to the `persistanceManager`. Disk operations are slow, so inserting a new record into the database is a perfect candidate for an async call.
+
+<img width="662" alt="Screen Shot 2022-11-16 at 2 56 36 p m" src="https://user-images.githubusercontent.com/24994818/202292538-c113ceb9-8e1e-41d6-9be6-22fc84687264.png">
+
+When an object sends any async message, it does not need to wait for a response. The asynchronous call gets executed in the background, and it returns once it completes. Unlike asynchronous calls, it does not block the caller.
+
+> Asynchronous behavior stands at the core of modern software system. They improve responsiveness on multicore processors and provide better user experience because lengthy operations won´t block the user interface. 
+
+So you will problably draw async messages a lot. The issue is that the difference between regular and async messages is very subtle: stick arrowhead instead of a filled arrowhead. To aovid misunderstanding, you can add an extra note to make it visible it is an async message 
+
+
 # 27. [Activity Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 28. [Statechart diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 29. [Case Study: Designing a Note-Taking App](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
