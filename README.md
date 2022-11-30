@@ -867,8 +867,23 @@ When an object sends any async message, it does not need to wait for a response.
 
 > Asynchronous behavior stands at the core of modern software system. They improve responsiveness on multicore processors and provide better user experience because lengthy operations won´t block the user interface. 
 
-So you will problably draw async messages a lot. The issue is that the difference between regular and async messages is very subtle: stick arrowhead instead of a filled arrowhead. To aovid misunderstanding, you can add an extra note to make it visible it is an async message 
+So you will problably draw async messages a lot. The issue is that the difference between regular and async messages is very subtle: stick arrowhead instead of a filled arrowhead. To aovid misunderstanding, you can add an extra note to make it visible it is an async message.
 
+<img width="461" alt="Screen Shot 2022-11-29 at 2 52 57 p m" src="https://user-images.githubusercontent.com/24994818/204645375-f0afc1df-d3c9-4f4c-9de6-656bf3b83a82.png">
+
+We also have self messages. These represent a method calling another method of the same object.
+
+<img width="660" alt="Screen Shot 2022-11-29 at 2 57 55 p m" src="https://user-images.githubusercontent.com/24994818/204646214-7f3ad904-27ad-443f-9f3b-a9dcd0d2d179.png">
+
+An object can also send a delete message to another object. The `persistenceManager` sends a delete message to the `tripEntity` gets destroyed, and its lifeline gets terminated by a cross symbol.
+
+<img width="670" alt="Screen Shot 2022-11-29 at 3 07 33 p m" src="https://user-images.githubusercontent.com/24994818/204647796-102a92ba-c2f0-406c-8e75-724f925868ff.png">
+
+Sequence diagramas should provide an overview of what is going on in a given scenario. We don´t try to represent all the method calls precisely. Insted, we focus on the most relevant parts.
+
+Sequence diagrams help us in clarifying the interactions between objects in a specific scenario. By getting more profound insights into the inner workings of our objects, we may need to refine their behavior. Or even add new classes or establish new relationships betweem our classes.
+
+And that is perfectly fine. The process of designing a software system is all about finding out what is missing, what needs to be enhanced or changed.
 
 # 27. [Activity Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 28. [Statechart diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
