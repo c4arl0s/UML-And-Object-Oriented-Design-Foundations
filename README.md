@@ -190,11 +190,64 @@ The objects that form the system interact with each other. Object-orientation ai
 
 <img width="435" alt="Screen Shot 2022-08-19 at 1 38 57 a m" src="https://user-images.githubusercontent.com/24994818/185558608-214ea775-87c6-4fe4-940c-0d3b93ac1bf3.png">
 
+What kinds of things become objects in object-oriented programs? The answer to this is lim- ited only by your imagination, but here are some typical categories to start you thinking:
+
+# Physical objects
+- Automobiles in a traffic-flow simulation 
+- Electrical components in a circuit-design program 
+- Countries in an economics model
+- Aircraft in an air traffic control system
+
+# Elements of the computer-user environment
+- Menus
+- Graphics objects (lines, rectangles, circles) 
+- The mouse, keyboard, disk drives, printer
+
+# Data-storage constructs
+- Customized arrays
+- Stacks
+- Linked lists
+- Binary trees
+
+# Human entities
+- Employees
+- Students
+- Customers
+- Salespeople
+
+# Collections of data
+- An inventory
+- A personnel file
+- A dictionary
+- A table of the latitudes and longitudes of world cities
+
+# User-defined data types
+- Time
+- Angles
+- Complex numbers
+- Points on the plane
+
+# Components in computer games
+- Cars in an auto race
+- Positions in a board game (chess, checkers)
+- Animals in an ecological simulation
+- Opponents and friends in adventure games
+
+The match between programming objects and real-world objects is the happy result of combin- ing data and functions: The resulting objects offer a revolution in program design. No such close match between programming constructs and the items being modeled exists in a procedural language.
+
 # 11. [The Class](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
 A class is a blueprint of an object.
 
 We created a class by a giving it a name, declaring its properties an actions. We call these actions methods. Methods are blocks of code that can be called to execute certain operations. They may take input parameters and can also return values. Methods are like functions in structured programming languages. The methods are basically functions embedded in a class.
+
+<img width="524" alt="Screenshot 2023-10-28 at 1 46 30 p m" src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/9453f058-ce1f-43d1-8cc9-881b87981d93">
+
+<img width="516" alt="Screenshot 2023-10-28 at 1 55 18 p m" src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/c5ca1799-af26-435c-b7f1-87f213e7b945">
+
+# More definitions
+
+- A class serves as a plan, or blueprint.
 
 # 12. [Abstraction](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
@@ -226,6 +279,16 @@ A tighly couple system, with most of the objects depending on each other, is the
 
 Any tiny modification will cascade down and require you to change other parts of the system, too. It is like a never-ending nightmare.
 
+# More Definitions
+
+- `Encapsulation` is usually defined as one of two things, 
+1. A mechanism by which information (code) is hidden. 
+2. A construct for bundling data together.
+
+- The grouping of data and computations on the data into one class is called `encapsulation`.
+
+<img width="522" alt="Screenshot 2023-10-28 at 1 42 27 p m" src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/9a470cd5-ce91-4a91-87fe-9341334e2091">
+
 # 14. [Inheritance](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
 1. Inheritance means code reuse. 
@@ -233,6 +296,8 @@ Any tiny modification will cascade down and require you to change other parts of
 3. A class can inherit all the attributes and behavior from another class.
 
 <img width="611" alt="Screen Shot 2022-08-22 at 8 04 49 a m" src="https://user-images.githubusercontent.com/24994818/185928333-5b7ef590-70f5-4dca-8ff1-7591589ed3c4.png">
+
+<img width="513" alt="Screenshot 2023-10-28 at 1 56 12 p m" src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/1d7bd721-e01a-430d-8e2f-f8acf43cf8da">
 
 # 15. [Polymorphism](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
@@ -261,7 +326,7 @@ Pokemon attack!
 
 We see in console that the attack method produced the same output in the console for all the objects but one.
 
-That object was type WaterPokemon, which overrides the `attack()` method.
+That object was type `WaterPokemon`, which overrides the `attack()` method.
 
 # 16. [Object-Oriented Analysis and Design](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
