@@ -1002,7 +1002,7 @@ We can add more details and further actions to our activity diagram if that is u
 
 # 28. [Statechart diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
-The StateChart or State Machine diagram models how an object transitions from one state to another over its lifetime.
+**The StateChart or State Machine diagram models how an object transitions from one state to another over its lifetime**.
 
 It describes the state changes of an object in response to certain events.
 
