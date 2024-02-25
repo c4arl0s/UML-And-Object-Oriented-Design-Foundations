@@ -30,7 +30,7 @@
 25. [x] [25. Dependency, Aggregation, composition & Realization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#25-Dependency-Aggregation-composition--Realization)
 26. [x] [26. Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#26-Sequence-Diagrams)
 27. [x] [27. Activity Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#27-Activity-Diagrams)
-28. [ ] [28. Statechart diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#28-Statechart-diagrams)
+28. [x] [28. Statechart diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#28-Statechart-diagrams)
 29. [ ] [29. Case Study: Designing a Note-Taking App](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#29-Case-Study-Designing-a-Note-Taking-App)
 30. [ ] [30. Collecting the requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#30-Collecting-the-requirements)
 31. [ ] [31. Creating User Stories](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#31-Creating-User-Stories)
@@ -1000,9 +1000,36 @@ If both actions suceed, we inform the user about the successful trip creation, a
 
 We can add more details and further actions to our activity diagram if that is useful. The activity diagram is a useful technique to represent behavioral logic. I would not recommend it when working with nontechnical peope, though.
 
-
-
 # 28. [Statechart diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+The StateChart or State Machine diagram models how an object transitions from one state to another over its lifetime.
+
+It describes the state changes of an object in response to certain events.
+
+A state is a condition in which an object exists. Think of objects states like `New`, `Pending Changes`, or `Completed`.
+
+These states can change when some event gets triggered. The `Pending Changes` state transitions to `Saved` after a successful saved event.
+
+And the `Saved` state will change to the final `Terminated` state if the object is deleted.
+
+The state machine diagram starts with an initial state. This is not a real state, but rather the entry point. States are drawn as a rectangles with rounded corners with the state´s name. The transitions from one state to another are shown as lines that end in an open arrow.
+
+<img width="667" alt="Screenshot 2024-02-25 at 12 11 37 p m" src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/8d8c4244-5d79-4b51-86ac-78f6052f36f3">
+
+Each transition can be labeled with an event name and a guard.
+
+<img width="662" alt="Screenshot 2024-02-25 at 12 13 03 p m" src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/9c969e72-737f-465b-9e4d-801c0336870f">
+
+The guard appears between angle brackets; it is a Boolean condition that needs to be true for the state change to ocurr.
+
+Let´s assume that pending changes can only be saved if the device is connected to the internet. We can represent conditional logic in statechart diagrams as follows:
+
+<img width="511" alt="Screenshot 2024-02-25 at 12 23 19 p m" src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/e217ed86-39a9-4927-b61c-c89dad7fcd98">
+
+The final state shows the state machine is completed an it also implies the deletion of the object.
+
+**Use statechart diagrams to describe the object states of a system while identifying the events responsible for the state changes**.
+
 # 29. [Case Study: Designing a Note-Taking App](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 30. [Collecting the requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 31. [Creating User Stories](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
