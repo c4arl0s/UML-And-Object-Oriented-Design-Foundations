@@ -29,7 +29,7 @@
 24. [x] [24. Generalization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#24-Generalization)
 25. [x] [25. Dependency, Aggregation, composition & Realization](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#25-Dependency-Aggregation-composition--Realization)
 26. [x] [26. Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#26-Sequence-Diagrams)
-27. [ ] [27. Activity Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#27-Activity-Diagrams)
+27. [x] [27. Activity Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#27-Activity-Diagrams)
 28. [ ] [28. Statechart diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#28-Statechart-diagrams)
 29. [ ] [29. Case Study: Designing a Note-Taking App](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#29-Case-Study-Designing-a-Note-Taking-App)
 30. [ ] [30. Collecting the requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#30-Collecting-the-requirements)
@@ -951,6 +951,57 @@ Sequence diagrams help us in clarifying the interactions between objects in a sp
 And that is perfectly fine. **The process of designing a software system is all about finding out what is missing, what needs to be enhanced or changed**.
 
 # 27. [Activity Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+Activity diagrams can be used to describe workflows. The actions are represented by nodes. We start an activity diagram with an initial node drawn as a small, filled circle. We can then transition to the next node. The transition is called flow, and it is shown as a line that ends with an open arrowhead. The arrow points the direction of the logic flow from one action to the other.
+
+![Image](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/473b4ec0-9ab7-4558-b1ea-39e87cbecb86)
+
+Activity diagrams can also express conditional logic. We model a decision node as a diamond. It has a single incoming flow and two or more outbounds flows.
+
+![Image](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/6cfb2c62-884e-47c9-89d5-b4a478d1b979)
+
+Each outbound flow has a guard, which is a Boolean condition placed inside square brackets. The guards need to be mutually exclusive. Whenever we reach a decision, we can choose only one of the outbound flows.
+
+After a decision, the flows can be merged using a merge activity. A merge has multiple input flows and a single ouput flow.
+
+![Image](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/fc0200e9-525a-43c9-8c0e-939c227db578)
+
+Activity diagrams support parallel behavior. To express current flows, we use a fork drawn as a thick horizontal line. A fork has one incoming flow and several outgoing concurrent flows.
+
+![Image](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/34c0eccd-bd7d-456e-bdd6-af5a88a27a62)
+
+We need to synchronize the tasks that execute concurrently. For example, we can not display the image while it is being read from the local persistence or downloaded from the server. A join represents a syncronization point.
+
+The final node represents the end of the workflow.
+
+![Image](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/c454d620-9047-480a-a4d9-489df02c2dd5)
+
+The following activity diagram describes a simplified version of the trip creation process.
+
+![Image](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/64cc1d21-0685-4b18-ad74-0069d0525706)
+
+We begin with the initial node. The user decides to create a new trip.
+
+![Image](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/da03bed6-8252-460b-9e38-c91f873e73ad)
+
+Next, he is asked to type the trip´s name. Now, the app needs to check whether a trip with the same name already exists.
+
+![Image](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/9823ac12-b13d-4235-875b-8c98e3580fa5)
+
+If it does, we prompt the user to enter a new name or cancel the trip creation process. If he decides to cancel the flow, we end the activity. Otherwise, we validate the name again. 
+
+If the trip name is not taken, we let the user fill the remaining trip data. Finally, the user hits the save button. We may want to let him cancel the process here.
+
+Now, I will use a fork to show that we perform some actions in parallel. Storing the new trip into the local persistence and uploading it to the cloud server happen concurrently.
+
+![Image](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/7b3dc363-8c07-413f-8722-3152bbd34ecf)
+
+If both actions suceed, we inform the user about the successful trip creation, and we are done.
+
+We can add more details and further actions to our activity diagram if that is useful. The activity diagram is a useful technique to represent behavioral logic. I would not recommend it when working with nontechnical peope, though.
+
+
+
 # 28. [Statechart diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 29. [Case Study: Designing a Note-Taking App](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 30. [Collecting the requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
