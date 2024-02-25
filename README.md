@@ -815,7 +815,7 @@ And we can also have child classes that inherit from different parents.
 
 <img width="449" alt="Screen Shot 2022-11-03 at 1 42 48 p m" src="https://user-images.githubusercontent.com/24994818/199818894-f61f00cd-ac58-4a04-a6b6-1f77b95626f0.png">
 
-Some programming languages support multiple inheritance; C++, Perl, Python - just to name a few. 
+Some programming languages support multiple inheritance; `C++`, `Perl`, `Python` - just to name a few. 
 
 Many modern programming languages only allow single inheritance, that is, inheriting from one parent class. Single inheritance reduces complexity and avoids the ambiguity that comes with multiple inheritance.
 
@@ -890,11 +890,11 @@ Here is a quick summary of the relationships and their graphical representation:
 
 # 26. [Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
-Use case and class diagrams are static diagrams. They are great at representing the structure of our system.
+**Use case and class diagrams are static diagrams**. They are great at representing **the structure of our system**.
 
 What if we need to show how the objects interact with each other?. When are objects created and for how long are they around?. Static diagrams can´t answer these questions.
 
-UML provides dynamic diagrams to represent how objects communicate with each other. The most common dynamic diagram is the sequence diagrams.
+UML provides dynamic diagrams to represent how objects communicate with each other. **The most common dynamic diagram is the sequence diagrams**.
 
 > We use the sequence diagram to describe the flow of logic in one particular scenario.
 
@@ -912,7 +912,7 @@ The lifeline of an object is represented by the dotted lines beneath each box. T
 
 Now, let me illustrate the various messages in a practica example.
 
-I will be using StartUML, a UML diagramming software. Let's assume that we have a `persistenceManager` object. This objetc is responsible for storing and retrieving entities in the app´s local database. 
+**I will be using StartUML, a UML diagramming software**. Let's assume that we have a `persistenceManager` object. This objetc is responsible for storing and retrieving entities in the app´s local database. 
 
 The `persistenceManager`needs to create and store a `TripEntity` instance. First, I add the `TripEntity` object. The `persistanceManager` instance sends a create message to initiate a `tripEntity` object. The create message is represented as a dashed line with a stick arrow head.
 
@@ -924,7 +924,7 @@ Next, the persistence manager sends a regular message to the already created tri
 
 Although we could display the return message, only do it if it is important. Return messages are implicit for synchronous messages, so we don´t have to display them.
 
-Asynchronous messages are drawn as solid lines with a stick arrowhead. The controller object sends an async `save(trip: Trip)` message to the `persistanceManager`. Disk operations are slow, so inserting a new record into the database is a perfect candidate for an async call.
+**Asynchronous messages are drawn as solid lines with a stick arrowhead**. The controller object sends an async `save(trip: Trip)` message to the `persistanceManager`. Disk operations are slow, so inserting a new record into the database is a perfect candidate for an async call.
 
 <img width="662" alt="Screen Shot 2022-11-16 at 2 56 36 p m" src="https://user-images.githubusercontent.com/24994818/202292538-c113ceb9-8e1e-41d6-9be6-22fc84687264.png">
 
@@ -948,7 +948,7 @@ Sequence diagramas should provide an overview of what is going on in a given sce
 
 Sequence diagrams help us in clarifying the interactions between objects in a specific scenario. By getting more profound insights into the inner workings of our objects, we may need to refine their behavior. Or even add new classes or establish new relationships betweem our classes.
 
-And that is perfectly fine. The process of designing a software system is all about finding out what is missing, what needs to be enhanced or changed.
+And that is perfectly fine. **The process of designing a software system is all about finding out what is missing, what needs to be enhanced or changed**.
 
 # 27. [Activity Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 28. [Statechart diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
