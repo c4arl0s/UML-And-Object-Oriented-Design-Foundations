@@ -1031,6 +1031,15 @@ The final state shows the state machine is completed an it also implies the dele
 **Use statechart diagrams to describe the object states of a system while identifying the events responsible for the state changes**.
 
 # 29. [Case Study: Designing a Note-Taking App](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+In this chapter, I walk you through the process of designing a note-taking application.
+
+We will start by collecting the requirements and writing user stories. We are going to analyze the system from various angles.
+
+By the end of this chapter, we will have created several UML diagrams that describe the structure and the behavior of our software.
+
+This is going to be an interesting exercise as we put into practice what we learned so far.
+
 # 30. [Collecting the requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 31. [Creating User Stories](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 32. [Diagraming the Main Use Cases](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
