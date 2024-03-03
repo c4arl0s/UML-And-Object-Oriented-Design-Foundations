@@ -33,7 +33,7 @@
 28. [x] [28. Statechart diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#28-Statechart-diagrams)
 29. [x] [29. Case Study: Designing a Note-Taking App](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#29-Case-Study-Designing-a-Note-Taking-App)
 30. [x] [30. Collecting the requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#30-Collecting-the-requirements)
-31. [ ] [31. Creating User Stories](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#31-Creating-User-Stories)
+31. [x] [31. Creating User Stories](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#31-Creating-User-Stories)
 32. [ ] [32. Diagraming the Main Use Cases](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#32-Diagraming-the-Main-Use-Cases)
 33. [ ] [33. Identifying the classes](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#33-Identifying-the-classes)
 34. [ ] [34. Describing the Flow of Note Creating using Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#34-Describing-the-Flow-of-Note-Creating-using-Sequence-Diagrams)
@@ -1078,6 +1078,53 @@ Next, let's talk about the nonfunctional requirements.
 Now that we have collected the requirements, we can proceed to the next step. We are going to map these requirements to technical descriptions.
 
 # 31. [Creating User Stories](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+Now that we have gathered the requirements, we will be writing user stories. So, let's get started.
+
+These are the functional requirements:
+
+# Note-Taking App - Functional Requirements
+
+```text
+- We need to build a note-taking app. Users can create an edit text-based notes. A note may also include images or hand-drawn sketches.
+- Sensitive notes can be protected from prying eyes using a password.
+- The app automatically uploads changes to pre-configured servers. We should suppor all major platforms: Dropbox, iCloud and Google Drive.
+```
+
+Considering these requirements, we identify three major topics:
+
+1. Note creating and editing
+2. Privacy - protecting user data
+3. Syncing to cloud servers
+
+These are all big chunks of functionality that can't be described through single user stories. Thus, I'm going to create an epic for each. As you may recall, an epic consist of multiple user stories that describe common functionality.
+
+# Epic 1: Note creating and editing
+
+```text
+- As a user, I want to create and edit notes so that I can quickly jot down my thoughts.
+- As a user, I want to attach photos to a note so that I can keep my memories in one place.
+- As a user, I want to add handwritten sketches so that I can insert funny tooms into my notes.
+```
+
+# Epic 2: Privacy - Protecting User Data
+
+```text
+- As a user, I want to create private notes so that only I can access them.
+- As a user, I want to protect my sensitive notes with a password.
+```
+
+# Epic 3: Sync to Cloud serves
+
+```text
+- As a user, I want to sync my notes across my iOS devices so that my data is up-to-date on all of them.
+- As a user, I want my notes automatically uploaded to cloud servers (Dropbox, Google Drive or iCloud) so that I have a backup of all my data.
+```
+
+These user stories are technical descriptions that serve as a starting point of our use-case diagrams.
+
+Up next, I'm going to show how we might go ahead and map these user stories to actual use-case diagrams.
+
 # 32. [Diagraming the Main Use Cases](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 33. [Identifying the classes](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 34. [Describing the Flow of Note Creating using Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
