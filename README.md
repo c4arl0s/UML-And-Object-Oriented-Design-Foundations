@@ -31,8 +31,8 @@
 26. [x] [26. Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#26-Sequence-Diagrams)
 27. [x] [27. Activity Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#27-Activity-Diagrams)
 28. [x] [28. Statechart diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#28-Statechart-diagrams)
-29. [ ] [29. Case Study: Designing a Note-Taking App](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#29-Case-Study-Designing-a-Note-Taking-App)
-30. [ ] [30. Collecting the requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#30-Collecting-the-requirements)
+29. [x] [29. Case Study: Designing a Note-Taking App](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#29-Case-Study-Designing-a-Note-Taking-App)
+30. [x] [30. Collecting the requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#30-Collecting-the-requirements)
 31. [ ] [31. Creating User Stories](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#31-Creating-User-Stories)
 32. [ ] [32. Diagraming the Main Use Cases](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#32-Diagraming-the-Main-Use-Cases)
 33. [ ] [33. Identifying the classes](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#33-Identifying-the-classes)
@@ -1041,6 +1041,42 @@ By the end of this chapter, we will have created several UML diagrams that descr
 This is going to be an interesting exercise as we put into practice what we learned so far.
 
 # 30. [Collecting the requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+In this lecture, I am going to ilustrate the requirements collection phase through a real example.
+
+Let's start by thinking about the features of a note-taking application.
+
+First, we are going to be creating and editing text-base notes. But we don't want to create the next boring note-taking app.
+
+So, let's get creative and add some interesting features.
+
+```text
+- How about adding to our notes? and capturing hand-drawn sketches would be a cool addition too.
+- Privacy has become increasingle important. We should allow the storing of sensitive notes.
+- Automatica syncing to Dropbox, iCloud or Google Drive? sure, many users will find that a useful feature.
+```
+
+Now that we have some ideas floating around, we can come up with a first draft of our destilled requirements.
+
+# Note-Taking App - Functional Requirements
+
+```text
+- We need to build a note-taking app. Users can create an edit text-based notes. A note may also include images or hand-drawn sketches.
+- Sensitive notes can be protected from prying eyes using a password.
+- The app automatically uploads changes to pre-configured servers. We should suppor all major platforms: Dropbox, iCloud and Google Drive.
+```
+
+Next, let's talk about the nonfunctional requirements.
+
+# Note-Taking App - Nonfunctional Requirements
+
+```text
+- Let's release our app for iOS first. We will support iOS 10 and newer versions. The app needs to run on the iPhone and the iPad as well.
+- We will create a dedicated support website and include the link in the app's description and its "About" page.
+```
+
+Now that we have collected the requirements, we can proceed to the next step. We are going to map these requirements to technical descriptions.
+
 # 31. [Creating User Stories](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 32. [Diagraming the Main Use Cases](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 33. [Identifying the classes](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
