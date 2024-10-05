@@ -1126,6 +1126,62 @@ These user stories are technical descriptions that serve as a starting point of 
 Up next, I'm going to show how we might go ahead and map these user stories to actual use-case diagrams.
 
 # 32. [Diagraming the Main Use Cases](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+In this lecture, we are going to represent our user stories as use-case diagrams. Let´s start with the first epic:
+
+# Epic #1: Note creation and editing
+
+- As a user, I want to create and edit notes so that I can quicly jot down my thoughts.
+- As a user, I want to attach photos to a note so that I can keep my memories in one place.
+- As a user, I want to add handwritten sketches so that I can insert funny things into my notes.
+
+Let´s map these user stories to a use-case diagram.
+
+The actor is the user of this app. Next, I add the use-cases: "Create Note" and "Edit Note".
+
+![Image](https://github.com/user-attachments/assets/0095f41d-95fb-4c11-8adc-b3d8c54f40c1)
+
+We also need an "Attach Photo" and "Add Handwritten Sketch" use cases. Now, these are not standalone use-cases. We can´t attach a photo or add a handwritten sketch without creating or editing a note. Thus, I represent them as included in the "Create Note" and "Edit Note" use-cases.
+
+![Image](https://github.com/user-attachments/assets/0757241b-0829-4349-832e-05a4f8c99663)
+
+Let´s continue with the second epic.
+
+# Epic #2: Privacy - Protecting User Data
+
+- As a user, I want to create private notes so that only I can access them.
+- As a user, I want to protect my sensitive notes with a password.
+
+Again, we need an actor; It is the user as usual.
+
+The creation of private notes is a special case of note creation. We can represent the "Create Private Note" as an extension of the regular "Create Note" use-case.
+![Image](https://github.com/user-attachments/assets/dfd03bee-6b19-4c22-af8f-cb82018aec15)
+
+Wee need to protect sensitive notes with a password, so I created a "Protect with Password" use case for it. This use-case should be included in the Create Private Note use-case, so I draw it using and include relationship.
+
+![Image](https://github.com/user-attachments/assets/bb93d6d5-194f-4462-a390-012bbc2d1ac7)
+
+Here is the third epic:
+
+# Epic #3: Syncing to cloud servers
+
+- As a user, I want to sync my notes across my iOS devices so that my data is up-to-date on all of them.
+- As a user, I want my notes automatically uploaded to cloud servers (Dropbox, Google Drive or iCloud) so that I have a backup of all my data.
+
+This epic is about synchronizing data with a server. This server is another actor, a non-human one. I will represent it on the right side of the diagram using this special format.
+
+![Image](https://github.com/user-attachments/assets/705adc26-c89f-4108-86bf-d706b6799043)
+
+Let´s determine the use-cases.
+
+So, whenever we create or modify a note, it needs to be sync´ed with the server.
+
+![Image](https://github.com/user-attachments/assets/34d20968-2c99-41d8-a99f-f3e365bede01)
+
+### That is an over simplification, but it illustrates what needs to happen in this scenario. As you may recall, use-case diagrams are a means to share our ideas with nontechnical people, so try to keep it simple.
+
+Next, we get into more technical details, as we will start to identify our test cases.
+
 # 33. [Identifying the classes](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 34. [Describing the Flow of Note Creating using Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 35. [The Note Object´s StateChart Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
