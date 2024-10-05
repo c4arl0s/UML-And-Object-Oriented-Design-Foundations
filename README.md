@@ -34,8 +34,8 @@
 29. [x] [29. Case Study: Designing a Note-Taking App](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#29-Case-Study-Designing-a-Note-Taking-App)
 30. [x] [30. Collecting the requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#30-Collecting-the-requirements)
 31. [x] [31. Creating User Stories](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#31-Creating-User-Stories)
-32. [ ] [32. Diagraming the Main Use Cases](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#32-Diagraming-the-Main-Use-Cases)
-33. [ ] [33. Identifying the classes](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#33-Identifying-the-classes)
+32. [x] [32. Diagraming the Main Use Cases](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#32-Diagraming-the-Main-Use-Cases)
+33. [x] [33. Identifying the classes](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#33-Identifying-the-classes)
 34. [ ] [34. Describing the Flow of Note Creating using Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#34-Describing-the-Flow-of-Note-Creating-using-Sequence-Diagrams)
 35. [ ] [35. The Note Object´s StateChart Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#35-The-Note-Object´s-StateChart-Diagram)
 36. [ ] [36. What is next?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#36-What-is-next)
@@ -1183,6 +1183,125 @@ So, whenever we create or modify a note, it needs to be sync´ed with the server
 Next, we get into more technical details, as we will start to identify our test cases.
 
 # 33. [Identifying the classes](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+Let´s create the static structure of our system. We will identify the main classes and the relationships between them.
+
+Our app is about taking notes. So, we will need a class that represents a Note.
+
+![Image](https://github.com/user-attachments/assets/7cfef203-66de-4771-af94-d1371cf2931d)
+
+A Note has a text. So, I add a private attribute called "text" of type String. As you may recall, we should not expose class properties. Hence "text" is private.
+
+![Image](https://github.com/user-attachments/assets/d535dd49-ad64-484d-8c6b-10cc516d187b)
+
+What else do we know?. Let´s take a look at the use-case diagrams we have put together.
+
+![Image](https://github.com/user-attachments/assets/735b4751-8f8e-4652-8b7a-0926606e4f02)
+
+We also need an "Attach Photo" and "Add Hanwritten Sketch" use case. A Note needs to have an attribute for the `photos` and one for the handwritten sketches.
+
+I am using the plural form: `photos` and `sketches`. That is, A Note may have many photos and hand-drawn sketches attached to it, I will make these attributes of List type.
+
+![Image](https://github.com/user-attachments/assets/ccdb6d9d-fbd3-4fec-a355-fb95b1e0f624)
+
+The photos attibute is a List of Image tyme. I introduce an Image class, which can later be changed to an existing type. In iOS, that would be `UIImage`, but that is not important. The point to identify the potential classes that play a role in our system.
+
+![Image](https://github.com/user-attachments/assets/4d808a06-0be2-4538-89e1-29cacad4c78d)
+
+Simililarly, we need a list of sketches. The Sketch class represents our hand-drawn sketches.
+
+![Image](https://github.com/user-attachments/assets/ca8de7c4-dc11-4c70-b33a-6259397e0f2c)
+
+The Note class needs some methods:
+
+- `setText(text: String)` to set the Note´s text and `getText(): String` to retrieve the text.
+- `addImage(image: Image)` to attach a new image and
+- `getImages(): List<Image>` to retrieve all images of a Note.
+- `addSketch(sketch: Sketch)` and
+- `getSketches(): List<Sketch> to get the hand-drawn sketches of a Note.
+
+![Image](https://github.com/user-attachments/assets/3625782b-2fa0-4eff-a730-c8c5f72bec1f)
+
+We don´t know anything yet about the underlying format for the Image and the Sketch class.
+
+And that is fine. We need to abstract things first and iteratively refine it. At the end, we may store our hand-drawn sketches either as a JPEG image. But requirements may change and we will need a vector format, so we will use PDF.
+
+Again, we should not go into such details at this stage or we may easily get stuch. This phenomenon is well-know and it even has a name: `analysis-paralysis`.
+
+> Start with a few broad strokes instead of overthinking and spending too much time on figuring out the details right away. Then try to get more specific as you understand more.
+
+Now, let´s think about the relationships between these classes?. Is there an association between the Note and the Image class?. or rather a dependency?.
+
+The Note class has an attribute that refers to the Image and the Sketch class. It did not receive instances of these classes as parameters to a method, so it is not a dependency relationship.
+
+So, is it an association?. Yes, it is. But let´s dig a but deeper.
+
+What happens when we delete a Note object with its images and sketches?. They will be destroyed, too. It does not make sense to keep them if the user decides to remove the Note. 
+
+That means that the images and the sketches live and die with the Note object. As you may recall, this is the "part-of" relationship called composition.
+
+![Image](https://github.com/user-attachments/assets/d1a70088-90cd-4655-b5fd-24e607db426c)
+
+Now, an `Image` does not need to know about the `Note`. Nor does the `sketch`. So, these are directed relationships.
+
+![Image](https://github.com/user-attachments/assets/4975f709-8ff7-46c5-a671-79f073bfaa85)
+
+Based on the second epic, we need a specialized Note that holds sensitive data.
+
+# Epic #2: Privacy - Protecting User Data
+
+- As a user, I want to create private notes so that only I can access them.
+- As a user, I want to protect my sensitive notes with a password.
+
+This note shares most of the attributes an behavior associated with the Note class. This looks like a perfect candidate for inheritance.
+
+![Image](https://github.com/user-attachments/assets/39eab7e8-4df3-4bb8-85c7-74eb9af6fa70)
+
+
+`SecureNote` inherits from the Note class. In addition to the inherited attributes, it has property called `passwordHash`.
+
+![Image](https://github.com/user-attachments/assets/32ca3cf2-7868-4922-9117-ae73d32fcef7)
+
+Storing the password in insecure. Instead, we store the password´s hash value. The hash is generated using a one-way hashing algorithm from the password. The password can´t be reconstructed from its hash value.
+
+For the hashing algorithm, I am going to define a `Crypto` class. It provides the public hash method that takes a `String` as input and returns its hash value. The `SecureNote` is going to relay on the `Crypto` utility class to create the password hash. I indicate this as a dependency between the `SecureNote` and the `Crypto` class.
+
+![Image](https://github.com/user-attachments/assets/dbb64ac8-bb39-4c22-944f-8296d2648f18)
+
+Next, we need a class that is responsible for storing the notes and their associated data in the local persistence. We don´t want to be too specific at this point as we have not defined yet what local persistence means. It could be the filesystem or an SQLite database. We could also choose `CoreData` 
+
+That is not important at this point, so we will use abstraction. Instead of specifying a concrete file or database manager, I am going to create an interface that defines a couple of methods.
+
+Let´s call it `LocalPersistence`. It is an interface: It declares the method signatures that need to be implemented, but it provides no functionality. The implementation classes will be responsible for implementing these methods. The `LocalPersistence` declares the following interface:
+
+- `getNotes(): List<Node>` - retrieves all notes from the local persistence.
+- `save(note: Note)` - stores a note locally
+- `update(note: Note)` - updates a note that has been persisted.
+- `delete(note: Note)` - removes a note from the local persistence.
+
+All these methods have parameters or return values of type `Note`. Thus, we can draw a dependency relationship between the `LocalPersistence` interface and the `Note` class.
+
+![Image](https://github.com/user-attachments/assets/776c864c-41ef-4e67-af4b-490c1e292e91)
+
+Let´s say that we decide to store our notes in the file system. The `FileManager` implements the methods declared in `LocalPersistence`. I use the realization relationship to show that.
+
+![Image](https://github.com/user-attachments/assets/1132e803-bd5f-4fcb-bc70-de10506a8987)
+
+Similarly, I will create an interface for the cloud syncing feature. The `NetworkController` interface declares the methods that take care of the networking related operations*:
+
+- `fetchNotes(): List<Node>` - fetches all notes from the server.
+- `upload(note: Note)` - uploads a new note to the server.
+- `refresh(note: Note)` - updates the note tha has been uploaded.
+- `remove(note: Note)` - deletes a note from the server.
+
+Networking is slow, so these should be implemented as asynchronous operations.
+
+> (*) Network controllers are more complex but let´s keep it simple for this example.
+
+![Image](https://github.com/user-attachments/assets/df9f875d-ea92-4807-8867-56d59af89501)
+
+By now, you have probably got an idea of how class diagrams are created. Now that we mapped the static structure of our system, we can start analysing its behavioir.
+
 # 34. [Describing the Flow of Note Creating using Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 35. [The Note Object´s StateChart Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 36. [What is next?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
