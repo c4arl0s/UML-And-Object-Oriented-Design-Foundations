@@ -1192,7 +1192,7 @@ Our app is about taking notes. So, we will need a class that represents a Note.
 
 ![Image](https://github.com/user-attachments/assets/7cfef203-66de-4771-af94-d1371cf2931d)
 
-A Note has a text. So, I add a private attribute called "text" of type String. [As you may recall, we should not expose class properties. Hence "text" is private.]()
+A Note has a text. So, I add a private attribute called "text" of type String. [As you may recall, we should not expose class properties. Hence "text" is private.](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#encapsulate)
 
 ![Image](https://github.com/user-attachments/assets/d535dd49-ad64-484d-8c6b-10cc516d187b)
 
