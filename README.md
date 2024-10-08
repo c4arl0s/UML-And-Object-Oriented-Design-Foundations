@@ -1220,7 +1220,7 @@ The Note class needs some methods:
 - `addImage(image: Image)` to attach a new image and
 - `getImages(): List<Image>` to retrieve all images of a Note.
 - `addSketch(sketch: Sketch)` and
-- `getSketches(): List<Sketch> to get the hand-drawn sketches of a Note.
+- `getSketches(): List` to get the hand-drawn sketches of a Note.
 
 ![Image](https://github.com/user-attachments/assets/3625782b-2fa0-4eff-a730-c8c5f72bec1f)
 
