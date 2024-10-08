@@ -267,6 +267,8 @@ We don´t want to expose the inner workings of our class. An object should only 
 
 We restrict clients from modifying the object in ways we did not originally plan, whether it is intentional or accidental. Additionally, we prevent other parts of the system from relying on properties or behavior that may change.
 
+### encapsulate
+
 If we expose unnecessary details, any changes to those attributes or methods may affect other parts of the system. Whereas if we restricted access to that data or behavior, we don´t have to worry about the ripple effect of our changes.
 
 Data hiding is not about selfishly keeping stuff for ourselfts. It is rather about protecting our classes from unwanted external dependencies.
@@ -1190,7 +1192,7 @@ Our app is about taking notes. So, we will need a class that represents a Note.
 
 ![Image](https://github.com/user-attachments/assets/7cfef203-66de-4771-af94-d1371cf2931d)
 
-A Note has a text. So, I add a private attribute called "text" of type String. As you may recall, we should not expose class properties. Hence "text" is private.
+A Note has a text. So, I add a private attribute called "text" of type String. [As you may recall, we should not expose class properties. Hence "text" is private.]()
 
 ![Image](https://github.com/user-attachments/assets/d535dd49-ad64-484d-8c6b-10cc516d187b)
 
