@@ -956,39 +956,39 @@ And that is perfectly fine. **The process of designing a software system is all 
 
 Activity diagrams can be used to describe workflows. The actions are represented by nodes. We start an activity diagram with an initial node drawn as a small, filled circle. We can then transition to the next node. The transition is called flow, and it is shown as a line that ends with an open arrowhead. The arrow points the direction of the logic flow from one action to the other.
 
-![Image](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/473b4ec0-9ab7-4558-b1ea-39e87cbecb86)
+<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/473b4ec0-9ab7-4558-b1ea-39e87cbecb86" width="400">
 
 Activity diagrams can also express conditional logic. We model a decision node as a diamond. It has a single incoming flow and two or more outbounds flows.
 
-![Image](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/6cfb2c62-884e-47c9-89d5-b4a478d1b979)
+<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/6cfb2c62-884e-47c9-89d5-b4a478d1b979" width="400">
 
 Each outbound flow has a guard, which is a Boolean condition placed inside square brackets. The guards need to be mutually exclusive. Whenever we reach a decision, we can choose only one of the outbound flows.
 
 After a decision, the flows can be merged using a merge activity. A merge has multiple input flows and a single ouput flow.
 
-![Image](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/fc0200e9-525a-43c9-8c0e-939c227db578)
+<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/fc0200e9-525a-43c9-8c0e-939c227db578" width="400">
 
 Activity diagrams support parallel behavior. To express current flows, we use a fork drawn as a thick horizontal line. A fork has one incoming flow and several outgoing concurrent flows.
 
-![Image](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/34c0eccd-bd7d-456e-bdd6-af5a88a27a62)
+<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/34c0eccd-bd7d-456e-bdd6-af5a88a27a62" width="400">
 
 We need to synchronize the tasks that execute concurrently. For example, we can not display the image while it is being read from the local persistence or downloaded from the server. A join represents a syncronization point.
 
 The final node represents the end of the workflow.
 
-![Image](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/c454d620-9047-480a-a4d9-489df02c2dd5)
+<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/c454d620-9047-480a-a4d9-489df02c2dd5" width="400">
 
 The following activity diagram describes a simplified version of the trip creation process.
 
-![Image](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/64cc1d21-0685-4b18-ad74-0069d0525706)
+<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/64cc1d21-0685-4b18-ad74-0069d0525706" width="400">
 
 We begin with the initial node. The user decides to create a new trip.
 
-![Image](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/da03bed6-8252-460b-9e38-c91f873e73ad)
+<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/da03bed6-8252-460b-9e38-c91f873e73ad" width="400">
 
 Next, he is asked to type the trip´s name. Now, the app needs to check whether a trip with the same name already exists.
 
-![Image](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/9823ac12-b13d-4235-875b-8c98e3580fa5)
+<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/9823ac12-b13d-4235-875b-8c98e3580fa5" width="400">
 
 If it does, we prompt the user to enter a new name or cancel the trip creation process. If he decides to cancel the flow, we end the activity. Otherwise, we validate the name again. 
 
@@ -996,7 +996,7 @@ If the trip name is not taken, we let the user fill the remaining trip data. Fin
 
 Now, I will use a fork to show that we perform some actions in parallel. Storing the new trip into the local persistence and uploading it to the cloud server happen concurrently.
 
-![Image](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/7b3dc363-8c07-413f-8722-3152bbd34ecf)
+<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/7b3dc363-8c07-413f-8722-3152bbd34ecf" width="400">
 
 If both actions suceed, we inform the user about the successful trip creation, and we are done.
 
@@ -1141,11 +1141,11 @@ Let´s map these user stories to a use-case diagram.
 
 The actor is the user of this app. Next, I add the use-cases: "Create Note" and "Edit Note".
 
-![Image](https://github.com/user-attachments/assets/0095f41d-95fb-4c11-8adc-b3d8c54f40c1)
+<img src="https://github.com/user-attachments/assets/0095f41d-95fb-4c11-8adc-b3d8c54f40c1" width=400">
 
 We also need an "Attach Photo" and "Add Handwritten Sketch" use cases. Now, these are not standalone use-cases. We can´t attach a photo or add a handwritten sketch without creating or editing a note. Thus, I represent them as included in the "Create Note" and "Edit Note" use-cases.
 
-![Image](https://github.com/user-attachments/assets/0757241b-0829-4349-832e-05a4f8c99663)
+<img src="https://github.com/user-attachments/assets/0757241b-0829-4349-832e-05a4f8c99663" width=400">
 
 Let´s continue with the second epic.
 
@@ -1157,11 +1157,11 @@ Let´s continue with the second epic.
 Again, we need an actor; It is the user as usual.
 
 The creation of private notes is a special case of note creation. We can represent the "Create Private Note" as an extension of the regular "Create Note" use-case.
-![Image](https://github.com/user-attachments/assets/dfd03bee-6b19-4c22-af8f-cb82018aec15)
+<img src="https://github.com/user-attachments/assets/dfd03bee-6b19-4c22-af8f-cb82018aec15" width="400">
 
 Wee need to protect sensitive notes with a password, so I created a "Protect with Password" use case for it. This use-case should be included in the Create Private Note use-case, so I draw it using and include relationship.
 
-![Image](https://github.com/user-attachments/assets/bb93d6d5-194f-4462-a390-012bbc2d1ac7)
+<img src="https://github.com/user-attachments/assets/bb93d6d5-194f-4462-a390-012bbc2d1ac7" width="400">
 
 Here is the third epic:
 
@@ -1172,13 +1172,13 @@ Here is the third epic:
 
 This epic is about synchronizing data with a server. This server is another actor, a non-human one. I will represent it on the right side of the diagram using this special format.
 
-![Image](https://github.com/user-attachments/assets/705adc26-c89f-4108-86bf-d706b6799043)
+<img src="https://github.com/user-attachments/assets/705adc26-c89f-4108-86bf-d706b6799043> width="400">
 
 Let´s determine the use-cases.
 
 So, whenever we create or modify a note, it needs to be sync´ed with the server.
 
-![Image](https://github.com/user-attachments/assets/34d20968-2c99-41d8-a99f-f3e365bede01)
+<img src="https://github.com/user-attachments/assets/34d20968-2c99-41d8-a99f-f3e365bede01" width="400">
 
 ### That is an over simplification, but it illustrates what needs to happen in this scenario. As you may recall, use-case diagrams are a means to share our ideas with nontechnical people, so try to keep it simple.
 
@@ -1190,29 +1190,29 @@ Let´s create the static structure of our system. We will identify the main clas
 
 Our app is about taking notes. So, we will need a class that represents a Note.
 
-![Image](https://github.com/user-attachments/assets/7cfef203-66de-4771-af94-d1371cf2931d)
+<img src="https://github.com/user-attachments/assets/7cfef203-66de-4771-af94-d1371cf2931d" width="400">
 
 A Note has a text. So, I add a private attribute called "text" of type String. [As you may recall, we should not expose class properties. Hence "text" is private.](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#encapsulate)
 
-![Image](https://github.com/user-attachments/assets/d535dd49-ad64-484d-8c6b-10cc516d187b)
+<img src="https://github.com/user-attachments/assets/d535dd49-ad64-484d-8c6b-10cc516d187b" width=400">
 
 What else do we know?. Let´s take a look at the use-case diagrams we have put together.
 
-![Image](https://github.com/user-attachments/assets/735b4751-8f8e-4652-8b7a-0926606e4f02)
+<img src="https://github.com/user-attachments/assets/735b4751-8f8e-4652-8b7a-0926606e4f02" width="400">
 
 We also need an "Attach Photo" and "Add Hanwritten Sketch" use case. A Note needs to have an attribute for the `photos` and one for the handwritten sketches.
 
 I am using the plural form: `photos` and `sketches`. That is, A Note may have many photos and hand-drawn sketches attached to it, I will make these attributes of List type.
 
-![Image](https://github.com/user-attachments/assets/ccdb6d9d-fbd3-4fec-a355-fb95b1e0f624)
+<img src="https://github.com/user-attachments/assets/ccdb6d9d-fbd3-4fec-a355-fb95b1e0f624" width="400">
 
 The photos attibute is a List of Image tyme. I introduce an Image class, which can later be changed to an existing type. In iOS, that would be `UIImage`, but that is not important. The point to identify the potential classes that play a role in our system.
 
-![Image](https://github.com/user-attachments/assets/4d808a06-0be2-4538-89e1-29cacad4c78d)
+<img src="https://github.com/user-attachments/assets/4d808a06-0be2-4538-89e1-29cacad4c78d" width="400">
 
 Simililarly, we need a list of sketches. The Sketch class represents our hand-drawn sketches.
 
-![Image](https://github.com/user-attachments/assets/ca8de7c4-dc11-4c70-b33a-6259397e0f2c)
+<img src="https://github.com/user-attachments/assets/ca8de7c4-dc11-4c70-b33a-6259397e0f2c" width="400">
 
 The Note class needs some methods:
 
@@ -1222,7 +1222,7 @@ The Note class needs some methods:
 - `addSketch(sketch: Sketch)` and
 - `getSketches(): List` to get the hand-drawn sketches of a Note.
 
-![Image](https://github.com/user-attachments/assets/3625782b-2fa0-4eff-a730-c8c5f72bec1f)
+<img src="https://github.com/user-attachments/assets/3625782b-2fa0-4eff-a730-c8c5f72bec1f" width="400">
 
 We don´t know anything yet about the underlying format for the Image and the Sketch class.
 
@@ -1242,11 +1242,11 @@ What happens when we delete a Note object with its images and sketches?. They wi
 
 That means that the images and the sketches live and die with the Note object. As you may recall, this is the "part-of" relationship called composition.
 
-![Image](https://github.com/user-attachments/assets/d1a70088-90cd-4655-b5fd-24e607db426c)
+<img src="https://github.com/user-attachments/assets/d1a70088-90cd-4655-b5fd-24e607db426c" width"400">
 
 Now, an `Image` does not need to know about the `Note`. Nor does the `sketch`. So, these are directed relationships.
 
-![Image](https://github.com/user-attachments/assets/4975f709-8ff7-46c5-a671-79f073bfaa85)
+<img src="https://github.com/user-attachments/assets/4975f709-8ff7-46c5-a671-79f073bfaa85" width="400">
 
 Based on the second epic, we need a specialized Note that holds sensitive data.
 
@@ -1257,18 +1257,18 @@ Based on the second epic, we need a specialized Note that holds sensitive data.
 
 This note shares most of the attributes an behavior associated with the Note class. This looks like a perfect candidate for inheritance.
 
-![Image](https://github.com/user-attachments/assets/39eab7e8-4df3-4bb8-85c7-74eb9af6fa70)
+<img src="https://github.com/user-attachments/assets/39eab7e8-4df3-4bb8-85c7-74eb9af6fa70" width="400">
 
 
 `SecureNote` inherits from the Note class. In addition to the inherited attributes, it has property called `passwordHash`.
 
-![Image](https://github.com/user-attachments/assets/32ca3cf2-7868-4922-9117-ae73d32fcef7)
+<img src="https://github.com/user-attachments/assets/32ca3cf2-7868-4922-9117-ae73d32fcef7" width="400">
 
 Storing the password in insecure. Instead, we store the password´s hash value. The hash is generated using a one-way hashing algorithm from the password. The password can´t be reconstructed from its hash value.
 
 For the hashing algorithm, I am going to define a `Crypto` class. It provides the public hash method that takes a `String` as input and returns its hash value. The `SecureNote` is going to relay on the `Crypto` utility class to create the password hash. I indicate this as a dependency between the `SecureNote` and the `Crypto` class.
 
-![Image](https://github.com/user-attachments/assets/dbb64ac8-bb39-4c22-944f-8296d2648f18)
+<img src="https://github.com/user-attachments/assets/dbb64ac8-bb39-4c22-944f-8296d2648f18" width="400">
 
 Next, we need a class that is responsible for storing the notes and their associated data in the local persistence. We don´t want to be too specific at this point as we have not defined yet what local persistence means. It could be the filesystem or an SQLite database. We could also choose `CoreData` 
 
@@ -1283,11 +1283,11 @@ Let´s call it `LocalPersistence`. It is an interface: It declares the method si
 
 All these methods have parameters or return values of type `Note`. Thus, we can draw a dependency relationship between the `LocalPersistence` interface and the `Note` class.
 
-![Image](https://github.com/user-attachments/assets/776c864c-41ef-4e67-af4b-490c1e292e91)
+<img src="https://github.com/user-attachments/assets/776c864c-41ef-4e67-af4b-490c1e292e91" width="400">
 
 Let´s say that we decide to store our notes in the file system. The `FileManager` implements the methods declared in `LocalPersistence`. I use the realization relationship to show that.
 
-![Image](https://github.com/user-attachments/assets/1132e803-bd5f-4fcb-bc70-de10506a8987)
+<img src="https://github.com/user-attachments/assets/1132e803-bd5f-4fcb-bc70-de10506a8987 width="400">
 
 Similarly, I will create an interface for the cloud syncing feature. The `NetworkController` interface declares the methods that take care of the networking related operations*:
 
@@ -1300,7 +1300,7 @@ Networking is slow, so these should be implemented as asynchronous operations.
 
 > (*) Network controllers are more complex but let´s keep it simple for this example.
 
-![Image](https://github.com/user-attachments/assets/df9f875d-ea92-4807-8867-56d59af89501)
+<img src="https://github.com/user-attachments/assets/df9f875d-ea92-4807-8867-56d59af89501" width="400">
 
 By now, you have probably got an idea of how class diagrams are created. Now that we mapped the static structure of our system, we can start analysing its behavioir.
 
