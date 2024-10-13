@@ -1141,11 +1141,11 @@ Let´s map these user stories to a use-case diagram.
 
 The actor is the user of this app. Next, I add the use-cases: "Create Note" and "Edit Note".
 
-<img src="https://github.com/user-attachments/assets/0095f41d-95fb-4c11-8adc-b3d8c54f40c1" width=400">
+<img src="https://github.com/user-attachments/assets/0095f41d-95fb-4c11-8adc-b3d8c54f40c1" width=500">
 
 We also need an "Attach Photo" and "Add Handwritten Sketch" use cases. Now, these are not standalone use-cases. We can´t attach a photo or add a handwritten sketch without creating or editing a note. Thus, I represent them as included in the "Create Note" and "Edit Note" use-cases.
 
-<img src="https://github.com/user-attachments/assets/0757241b-0829-4349-832e-05a4f8c99663" width=400">
+<img src="https://github.com/user-attachments/assets/0757241b-0829-4349-832e-05a4f8c99663" width=500">
 
 Let´s continue with the second epic.
 
@@ -1194,7 +1194,7 @@ Our app is about taking notes. So, we will need a class that represents a Note.
 
 A Note has a text. So, I add a private attribute called "text" of type String. [As you may recall, we should not expose class properties. Hence "text" is private.](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#encapsulate)
 
-<img src="https://github.com/user-attachments/assets/d535dd49-ad64-484d-8c6b-10cc516d187b" width=400">
+<img src="https://github.com/user-attachments/assets/d535dd49-ad64-484d-8c6b-10cc516d187b" width=500">
 
 What else do we know?. Let´s take a look at the use-case diagrams we have put together.
 
@@ -1242,11 +1242,11 @@ What happens when we delete a Note object with its images and sketches?. They wi
 
 That means that the images and the sketches live and die with the Note object. As you may recall, this is the "part-of" relationship called composition.
 
-<img src="https://github.com/user-attachments/assets/d1a70088-90cd-4655-b5fd-24e607db426c" width"400">
+<img src="https://github.com/user-attachments/assets/d1a70088-90cd-4655-b5fd-24e607db426c" width"500">
 
 Now, an `Image` does not need to know about the `Note`. Nor does the `sketch`. So, these are directed relationships.
 
-<img src="https://github.com/user-attachments/assets/4975f709-8ff7-46c5-a671-79f073bfaa85" width="400">
+<img src="https://github.com/user-attachments/assets/4975f709-8ff7-46c5-a671-79f073bfaa85" width="500">
 
 Based on the second epic, we need a specialized Note that holds sensitive data.
 
