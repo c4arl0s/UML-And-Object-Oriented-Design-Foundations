@@ -1172,7 +1172,7 @@ Here is the third epic:
 
 This epic is about synchronizing data with a server. This server is another actor, a non-human one. I will represent it on the right side of the diagram using this special format.
 
-<img src="https://github.com/user-attachments/assets/705adc26-c89f-4108-86bf-d706b6799043> width="400">
+<img src="https://github.com/user-attachments/assets/705adc26-c89f-4108-86bf-d706b6799043" width="400">
 
 Let´s determine the use-cases.
 
@@ -1287,7 +1287,7 @@ All these methods have parameters or return values of type `Note`. Thus, we can 
 
 Let´s say that we decide to store our notes in the file system. The `FileManager` implements the methods declared in `LocalPersistence`. I use the realization relationship to show that.
 
-<img src="https://github.com/user-attachments/assets/1132e803-bd5f-4fcb-bc70-de10506a8987 width="400">
+<img src="https://github.com/user-attachments/assets/1132e803-bd5f-4fcb-bc70-de10506a8987" width="400">
 
 Similarly, I will create an interface for the cloud syncing feature. The `NetworkController` interface declares the methods that take care of the networking related operations*:
 
