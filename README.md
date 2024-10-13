@@ -1242,11 +1242,11 @@ What happens when we delete a Note object with its images and sketches?. They wi
 
 That means that the images and the sketches live and die with the Note object. As you may recall, this is the "part-of" relationship called composition.
 
-<img src="https://github.com/user-attachments/assets/d1a70088-90cd-4655-b5fd-24e607db426c" width"500">
+<img src="https://github.com/user-attachments/assets/d1a70088-90cd-4655-b5fd-24e607db426c" width="400">
 
 Now, an `Image` does not need to know about the `Note`. Nor does the `sketch`. So, these are directed relationships.
 
-<img src="https://github.com/user-attachments/assets/4975f709-8ff7-46c5-a671-79f073bfaa85" width="500">
+<img src="https://github.com/user-attachments/assets/4975f709-8ff7-46c5-a671-79f073bfaa85" width="400">
 
 Based on the second epic, we need a specialized Note that holds sensitive data.
 
