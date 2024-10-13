@@ -1157,6 +1157,7 @@ Let´s continue with the second epic.
 Again, we need an actor; It is the user as usual.
 
 The creation of private notes is a special case of note creation. We can represent the "Create Private Note" as an extension of the regular "Create Note" use-case.
+
 <img src="https://github.com/user-attachments/assets/dfd03bee-6b19-4c22-af8f-cb82018aec15" width="400">
 
 Wee need to protect sensitive notes with a password, so I created a "Protect with Password" use case for it. This use-case should be included in the Create Private Note use-case, so I draw it using and include relationship.
@@ -1283,11 +1284,11 @@ Let´s call it `LocalPersistence`. It is an interface: It declares the method si
 
 All these methods have parameters or return values of type `Note`. Thus, we can draw a dependency relationship between the `LocalPersistence` interface and the `Note` class.
 
-<img src="https://github.com/user-attachments/assets/776c864c-41ef-4e67-af4b-490c1e292e91" width="400">
+<img src="https://github.com/user-attachments/assets/776c864c-41ef-4e67-af4b-490c1e292e91" width="600">
 
 Let´s say that we decide to store our notes in the file system. The `FileManager` implements the methods declared in `LocalPersistence`. I use the realization relationship to show that.
 
-<img src="https://github.com/user-attachments/assets/1132e803-bd5f-4fcb-bc70-de10506a8987" width="400">
+<img src="https://github.com/user-attachments/assets/1132e803-bd5f-4fcb-bc70-de10506a8987" width="600">
 
 Similarly, I will create an interface for the cloud syncing feature. The `NetworkController` interface declares the methods that take care of the networking related operations*:
 
@@ -1300,7 +1301,7 @@ Networking is slow, so these should be implemented as asynchronous operations.
 
 > (*) Network controllers are more complex but let´s keep it simple for this example.
 
-<img src="https://github.com/user-attachments/assets/df9f875d-ea92-4807-8867-56d59af89501" width="400">
+<img src="https://github.com/user-attachments/assets/df9f875d-ea92-4807-8867-56d59af89501" width="600">
 
 By now, you have probably got an idea of how class diagrams are created. Now that we mapped the static structure of our system, we can start analysing its behavioir.
 
