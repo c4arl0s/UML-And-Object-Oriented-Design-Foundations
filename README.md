@@ -956,31 +956,31 @@ And that is perfectly fine. **The process of designing a software system is all 
 
 Activity diagrams can be used to describe workflows. The actions are represented by nodes. We start an activity diagram with an initial node drawn as a small, filled circle. We can then transition to the next node. The transition is called flow, and it is shown as a line that ends with an open arrowhead. The arrow points the direction of the logic flow from one action to the other.
 
-<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/473b4ec0-9ab7-4558-b1ea-39e87cbecb86" width="400">
+<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/473b4ec0-9ab7-4558-b1ea-39e87cbecb86" width="200">
 
 Activity diagrams can also express conditional logic. We model a decision node as a diamond. It has a single incoming flow and two or more outbounds flows.
 
-<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/6cfb2c62-884e-47c9-89d5-b4a478d1b979" width="400">
+<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/6cfb2c62-884e-47c9-89d5-b4a478d1b979" width="200">
 
 Each outbound flow has a guard, which is a Boolean condition placed inside square brackets. The guards need to be mutually exclusive. Whenever we reach a decision, we can choose only one of the outbound flows.
 
 After a decision, the flows can be merged using a merge activity. A merge has multiple input flows and a single ouput flow.
 
-<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/fc0200e9-525a-43c9-8c0e-939c227db578" width="400">
+<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/fc0200e9-525a-43c9-8c0e-939c227db578" width="200">
 
 Activity diagrams support parallel behavior. To express current flows, we use a fork drawn as a thick horizontal line. A fork has one incoming flow and several outgoing concurrent flows.
 
-<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/34c0eccd-bd7d-456e-bdd6-af5a88a27a62" width="400">
+<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/34c0eccd-bd7d-456e-bdd6-af5a88a27a62" width="200">
 
 We need to synchronize the tasks that execute concurrently. For example, we can not display the image while it is being read from the local persistence or downloaded from the server. A join represents a syncronization point.
 
 The final node represents the end of the workflow.
 
-<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/c454d620-9047-480a-a4d9-489df02c2dd5" width="400">
+<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/c454d620-9047-480a-a4d9-489df02c2dd5" width="200">
 
 The following activity diagram describes a simplified version of the trip creation process.
 
-<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/64cc1d21-0685-4b18-ad74-0069d0525706" width="400">
+<img src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/64cc1d21-0685-4b18-ad74-0069d0525706" width="200">
 
 We begin with the initial node. The user decides to create a new trip.
 
@@ -1141,11 +1141,11 @@ Let´s map these user stories to a use-case diagram.
 
 The actor is the user of this app. Next, I add the use-cases: "Create Note" and "Edit Note".
 
-<img src="https://github.com/user-attachments/assets/0095f41d-95fb-4c11-8adc-b3d8c54f40c1" width="500">
+<img src="https://github.com/user-attachments/assets/0095f41d-95fb-4c11-8adc-b3d8c54f40c1" width="400">
 
 We also need an "Attach Photo" and "Add Handwritten Sketch" use cases. Now, these are not standalone use-cases. We can´t attach a photo or add a handwritten sketch without creating or editing a note. Thus, I represent them as included in the "Create Note" and "Edit Note" use-cases.
 
-<img src="https://github.com/user-attachments/assets/0757241b-0829-4349-832e-05a4f8c99663" width="500">
+<img src="https://github.com/user-attachments/assets/0757241b-0829-4349-832e-05a4f8c99663" width="400">
 
 Let´s continue with the second epic.
 
@@ -1190,11 +1190,11 @@ Let´s create the static structure of our system. We will identify the main clas
 
 Our app is about taking notes. So, we will need a class that represents a Note.
 
-<img src="https://github.com/user-attachments/assets/7cfef203-66de-4771-af94-d1371cf2931d" width="400">
+<img src="https://github.com/user-attachments/assets/7cfef203-66de-4771-af94-d1371cf2931d" width="200">
 
 A Note has a text. So, I add a private attribute called "text" of type String. [As you may recall, we should not expose class properties. Hence "text" is private.](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#encapsulate)
 
-<img src="https://github.com/user-attachments/assets/d535dd49-ad64-484d-8c6b-10cc516d187b" width="500">
+<img src="https://github.com/user-attachments/assets/d535dd49-ad64-484d-8c6b-10cc516d187b" width="200">
 
 What else do we know?. Let´s take a look at the use-case diagrams we have put together.
 
