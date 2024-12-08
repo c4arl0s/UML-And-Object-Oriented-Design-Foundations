@@ -52,6 +52,8 @@
 35. [ ] [35. The Note Object´s StateChart Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#35-The-Note-Object´s-StateChart-Diagram)
 36. [ ] [36. What is next?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#36-What-is-next)
 
+[x] [Summary of the relationships and their graphical representation]()
+
 # [UML-And-Object-Oriented-Design-Foundations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
 # 1. [Introduction](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
@@ -827,9 +829,9 @@ Let's say that we need a special `Trip` class for our business trips. `Bussiness
 
 <img width="232" alt="Screen Shot 2022-11-03 at 1 39 28 p m" src="https://user-images.githubusercontent.com/24994818/199818274-ba160053-f086-40e1-beb6-df803609b724.png">
 
-Because `BussinessTrip` inherits everything from its parent, we must only specify the attributes and operations that are specifi to the child.
+Because `BussinessTrip` inherits everything from its parent, we must only specify the attributes and operations that are specific to the child.
 
-A parent can have multiple childre.
+A parent can have multiple children.
 
 <img width="439" alt="Screen Shot 2022-11-03 at 1 40 58 p m" src="https://user-images.githubusercontent.com/24994818/199818549-a79ec201-6d89-472c-a7ef-ec98e99885fd.png">
 
@@ -865,7 +867,7 @@ Whereas dependency is usually created when a class receives a reference to the o
 
 <img width="426" alt="Screen Shot 2022-11-04 at 1 35 56 p m" src="https://user-images.githubusercontent.com/24994818/200060527-53fdf42f-fbc3-4eb6-a293-aa0904a79a13.png">
 
-# Aggregarion and Composition
+# Aggregation and Composition
 
 Aggregation represents a **part-whole relationship** and is drawn as a solid line with a hollow diamond at the owner's end.
 
@@ -905,6 +907,8 @@ It is represented as a hollow triangle on the interface end connected with dashe
 We could specify an interface to ensure that all current and upcoming trip classes provide a common set of methods. This is a useful feature that allows polymorphic behavior.
 
 <img width="212" alt="Screen Shot 2022-11-04 at 2 36 39 p m" src="https://user-images.githubusercontent.com/24994818/200069559-928ce99c-13bf-4028-bd94-462cfda64c1b.png">
+
+### Summary of the relationships and their graphical representation:
 
 Here is a quick summary of the relationships and their graphical representation:
 
@@ -1249,15 +1253,23 @@ We don´t know anything yet about the underlying format for the Image and the Sk
 
 And that is fine. We need to abstract things first and iteratively refine it. At the end, we may store our hand-drawn sketches either as a JPEG image. But requirements may change and we will need a vector format, so we will use PDF.
 
-Again, we should not go into such details at this stage or we may easily get stuch. This phenomenon is well-know and it even has a name: `analysis-paralysis`.
+Again, we should not go into such details at this stage or we may easily get stuck. This phenomenon is well-know and it even has a name: `analysis-paralysis`.
+
+### Analysis-Paralysis
 
 > Start with a few broad strokes instead of overthinking and spending too much time on figuring out the details right away. Then try to get more specific as you understand more.
 
-Now, let´s think about the relationships between these classes?. Is there an association between the Note and the Image class?. or rather a dependency?.
+Now, 
 
-The Note class has an attribute that refers to the Image and the Sketch class. It did not receive instances of these classes as parameters to a method, so it is not a dependency relationship.
+- let´s think about the relationships between these classes?. 
+- Is there an association between the Note and the Image class?. 
+- or rather a dependency?.
+
+The Note class has an attribute that refers to the `Image` and the `Sketch` class. It did not receive instances of these classes as parameters to a method, so it is not a dependency relationship.
 
 So, is it an association?. Yes, it is. But let´s dig a but deeper.
+
+### Association
 
 What happens when we delete a Note object with its images and sketches?. They will be destroyed, too. It does not make sense to keep them if the user decides to remove the Note. 
 
