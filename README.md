@@ -54,6 +54,29 @@
 
 [x] [Summary of the relationships and their graphical representation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#summary-of-the-relationships-and-their-graphical-representation)
 
+# Glosary
+
+Important Concept links:
+
+- [Functional Requirements]()
+- [Nonfunctional Requirements]()
+- [Waterfall]()
+- [Agile]()
+- [Encapsulation]()
+- [Inheritance]()
+- [Actors]()
+- [Scenario]()
+- [Analysis-Paralysis]()
+- [Association]()
+- [Class Diagram]()
+- [Activity Diagram]()
+- [Statechart Diagram]()
+- [Sequenctial Diagram]()
+- [User story]()
+- [Epic]()
+- [ripple effect]()
+- [UML]()
+
 # [UML-And-Object-Oriented-Design-Foundations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
 # 1. [Introduction](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
@@ -283,7 +306,7 @@ We don´t want to expose the inner workings of our class. An object should only 
 
 We restrict clients from modifying the object in ways we did not originally plan, whether it is intentional or accidental. Additionally, we prevent other parts of the system from relying on properties or behavior that may change.
 
-### encapsulate
+### encapsulation
 
 If we expose unnecessary details, any changes to those attributes or methods may affect other parts of the system. Whereas if we restricted access to that data or behavior, we don´t have to worry about the ripple effect of our changes.
 
@@ -360,6 +383,8 @@ That object was type `WaterPokemon`, which overrides the `attack()` method.
 
 Requirement means "a thing that is needed or wanted". We must clarified what is needed or wanted in our applications.
 
+### Functional Requirements
+
 The features of the system are the so-called functional requirements. Functional requirements represent what the app needs to provide feature-wise, how it should react to a particular input, or what is the expected behavior in a specific situation.
 
 Let's say you are about to develop an app for runners. You should answer questions like: 
@@ -370,6 +395,8 @@ Let's say you are about to develop an app for runners. You should answer questio
 4. Or automatically adjust the units based on the phone's settings instead?.
 
 <img width="621" alt="Screen Shot 2022-08-22 at 11 17 38 p m" src="https://user-images.githubusercontent.com/24994818/186068633-7328e5f7-fc70-40c0-bf49-5bb08c41648d.png">
+
+### Nonfunctional Requirements
 
 We will usually also have nonfunctional requirements. These are the requirements that are not directly related to a feature or behavior of the software system but are important nevertheless.
 
@@ -407,7 +434,7 @@ You should use some electronic form, but at early stages, pen and paper or a whi
 
 <img width="608" alt="Screen Shot 2022-08-23 at 12 02 54 a m" src="https://user-images.githubusercontent.com/24994818/186073979-85a72206-cc97-424d-8858-9122d37c8a39.png">
 
-These are also more formal ways, tools, and systems that support the requirements collection steps. I will not tal about these tools because this book is not about tools, but rather about principles.
+These are also more formal ways, tools, and systems that support the requirements collection steps. I will not talk about these tools because this book is not about tools, but rather about principles.
 
 To summarize, the requirements collection step boils down to this:
 
@@ -1231,7 +1258,7 @@ I am using the plural form: `photos` and `sketches`. That is, A Note may have ma
 
 <img src="https://github.com/user-attachments/assets/ccdb6d9d-fbd3-4fec-a355-fb95b1e0f624" width="400">
 
-The photos attibute is a List of Image tyme. I introduce an Image class, which can later be changed to an existing type. In iOS, that would be `UIImage`, but that is not important. The point to identify the potential classes that play a role in our system.
+The photos attibute is a List of `Image` type. I introduce an `Image` class, which can later be changed to an existing type. In iOS, that would be `UIImage`, but that is not important. The point to identify the potential classes that play a role in our system.
 
 <img src="https://github.com/user-attachments/assets/4d808a06-0be2-4538-89e1-29cacad4c78d" width="400">
 
@@ -1291,7 +1318,6 @@ Based on the second epic, we need a specialized Note that holds sensitive data.
 This note shares most of the attributes an behavior associated with the Note class. This looks like a perfect candidate for inheritance.
 
 <img src="https://github.com/user-attachments/assets/39eab7e8-4df3-4bb8-85c7-74eb9af6fa70" width="400">
-
 
 `SecureNote` inherits from the Note class. In addition to the inherited attributes, it has property called `passwordHash`.
 
