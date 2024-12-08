@@ -67,27 +67,29 @@ This notes will teach you fundamental knowledge needed to design and build objec
 
 # 3. [What's covered in this book ?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
-- Concepts
-- Unified Modeling Language
+This book is about object-oriented software design related concepts and the Unified Modeling Language
 
-UML: Provides a standar set of visual symbols and diagramming techniques used to effectively communicate software design concepts. Using UML you can sketch our systems easily.
+UML: Provides a standard set of visual symbols and diagramming techniques used to effectively communicate software design concepts. Using UML you can sketch our systems easily.
 
-The steps required to create a software system are not carved in stone, this is known as Software development methodlogies. There is two methodlogies.
+The steps required to create a software system are not carved in stone, this is known as Software development methodlogies. We are going to discuss two widespread methodologies in this book.
 
-1. Fundamental object-oriented concepts.
-2. Object oriented software analysis
-3. Design process.
-4. Dive into UML. Core UML notions and the fundamental UML diagram types.
-5. Use cases (primary way of describing the requirements in a formal way).
-6. Introduce of class diagram, which let us describe the main types that form a system and the relationships between them.
-7. Sequence diagrams, which are the way to go if you want to rerpesent dynamic behavior of your objects.
-8. Activity and the state diagram.
-9. Design a note taking application from scratch.
-10. Collect requirements of note taking app.
-11. Create use case diagrams.
-12. Create the sequence and the state diagram in action.
+Object-orientation has been around since the 80´s, but its principles are still valid and used in modern software design. I dedicated an entire section to the fundamental object-orientation concepts.
 
-# 4. [Prerequisites](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+Next, you will learn about the various steps of the object-oriented software analysis and design process. Mastering these techniiques will let you design your software systems more efficiently.
+
+The, we will dive into UML. I will talk about the core UMRL notions and the fundamental diagram types.
+
+I am going to talk about use cases, the primary way of describing the requirements in a formal way.
+
+I will introduce you the class diagrams, which let us describe the main types that form a system and the relationships between them.
+
+We will then talk about sequence diagrams, which are the way to go if you want to represent the dynamic behavior of your objects. We will also have a look at the activity and the state diagram.
+
+After discussing the most important UML diagram types, we will solidify the concepts you learn. I am going to walk you through the steps of designing a note taking application from scratch.
+
+We will start by collecting the requirements. Then, we will create the use case diagrams. After identifying the players, we will model the classes and their relationships. You are going to also see the sequence and the state diagram in action. 
+
+# 4. [Prerequisites](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content
 
 - [Download StarUML](https://staruml.io)
 
@@ -575,11 +577,17 @@ To represent a use-case, we draw an oval in the middle of the screen and put the
 
 <img width="252" alt="Screen Shot 2022-09-03 at 9 51 57 p m" src="https://user-images.githubusercontent.com/24994818/188294948-4282f5a4-ad4c-459b-8cfe-b137c81dd545.png">
 
-"Create a Trip Entry". "Edit Trip". "Export App Database". - These are examples of use-cases from our Travel Expense app mentioned before.
+- "Create a Trip Entry".
+- "Edit Trip". 
+- "Export App Database". 
+
+These are examples of use-cases from our Travel Expense app mentioned before.
 
 <img width="254" alt="Screen Shot 2022-09-03 at 9 54 48 p m" src="https://user-images.githubusercontent.com/24994818/188295007-99f1ba06-aa2f-4ec3-81d7-7881cc30ac0f.png">
 
-We use stick figures to represent the actors. As you may recall, actors are human beings or other systems that may interact with our system.
+We use stick figures to represent the actors. As you may recall:
+
+### Actors are human beings or other systems that may interact with our system.
 
 We draw the stick person to the left or the right of the diagram. The actor's name goes below the stick figure.
 
