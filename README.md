@@ -58,22 +58,22 @@
 
 Important Concept links:
 
-- [Functional Requirements]()
-- [Nonfunctional Requirements]()
-- [Waterfall]()
-- [Agile]()
-- [Encapsulation]()
-- [Inheritance]()
-- [Actors]()
+- [Functional Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#functional-requirements)
+- [Nonfunctional Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#nonfunctional-requirements)
+- [Waterfall Model](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#6-the-waterfall-model)
+- [Agile](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#7-agile)
+- [Encapsulation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#encapsulation)
+- [Inheritance](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#14-inheritance)
+- [Actors](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#actors-are-human-beings-or-other-systems-that-may-interact-with-our-system)
 - [Scenario]()
-- [Analysis-Paralysis]()
-- [Association]()
-- [Class Diagram]()
-- [Activity Diagram]()
-- [Statechart Diagram]()
-- [Sequenctial Diagram]()
-- [User story]()
-- [Epic]()
+- [Analysis-Paralysis](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#analysis-paralysis)
+- [Association](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#23-associations)
+- [Class Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#the-class-diagram)
+- [Activity Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#27-activity-diagrams)
+- [Statechart Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#28-statechart-diagrams)
+- [Sequence Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#26-sequence-diagrams)
+- [User story](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#user-stories)
+- [Epic](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#epics)
 - [ripple effect]()
 - [UML]()
 
@@ -93,6 +93,8 @@ This notes will teach you fundamental knowledge needed to design and build objec
 # 3. [What's covered in this book ?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
 This book is about object-oriented software design related concepts and the Unified Modeling Language
+
+### UML
 
 UML: Provides a standard set of visual symbols and diagramming techniques used to effectively communicate software design concepts. Using UML you can sketch our systems easily.
 
@@ -310,6 +312,10 @@ We restrict clients from modifying the object in ways we did not originally plan
 
 If we expose unnecessary details, any changes to those attributes or methods may affect other parts of the system. Whereas if we restricted access to that data or behavior, we don´t have to worry about the ripple effect of our changes.
 
+### Ripple efect
+
+> Small changes can ripple through software to cause major unintended impacts elsewhere.
+
 Data hiding is not about selfishly keeping stuff for ourselfts. It is rather about protecting our classes from unwanted external dependencies.
 
 > Expose only as much as your class properties and methods as needed for normal usage.
@@ -461,6 +467,8 @@ A use-case needs a title. Something like:
 Note that each use case should represent a disctinct functionality.
 
 Next, we define the actor who is using this functionality. We call it a "actor" since it can represent a user who is interacting with tha app, but also a non-human entity, like another system.
+
+### Scenario
 
 Then, we describe the details of this specific use-case. **This is called the scenario.**
 
