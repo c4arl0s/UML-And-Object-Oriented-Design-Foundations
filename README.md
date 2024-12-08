@@ -554,7 +554,7 @@ The Unified Modeling Language is a common design language that was released in 1
 
 Understanding a software system just by looking at its source code can be very time-consuming, and communicating ideas about software design or business processes is even harder if there is no commonly accepted way to do it.
 
-The Unified Modeling Language - in short UML - was introduced to solve this problem. UML is not a textual programming language, but rather a grapgical notation; a set of diagrams that help in designing and communicating software systems.
+The Unified Modeling Language - in short UML - was introduced to solve this problem. UML is not a textual programming language, but rather a graphical notation; a set of diagrams that help in designing and communicating software systems.
 
 <img width="592" alt="Screen Shot 2022-08-31 at 8 33 48 p m" src="https://user-images.githubusercontent.com/24994818/187813601-9be5b22c-302f-4e13-9148-083f266d096e.png">
 
@@ -586,7 +586,7 @@ The best part about UML is that it is independent of any particular programming 
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <img width="260" alt="Screen Shot 2022-08-30 at 10 30 21 p m" src="https://user-images.githubusercontent.com/24994818/187586517-9f5bc343-3802-45d9-b7dd-f3317fd2067e.png"> | <img width="290" alt="Screen Shot 2022-08-30 at 10 34 52 p m" src="https://user-images.githubusercontent.com/24994818/187587069-9c872643-5b18-4c74-bfe9-0ef22bd7dddc.png"> |
 
-Now, let0s see some ways of using UML in real-life.
+Now, let's see some ways of using UML in real-life.
 
 We can quickly draw a diagram to sketch a specific part of a software or a new functionality. I did that myself on a numerous occasions. Whenever something was unclear, I started to sketch UML diagrams before writing a single line of code.
 
