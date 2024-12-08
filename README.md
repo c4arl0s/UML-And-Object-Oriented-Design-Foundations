@@ -52,7 +52,7 @@
 35. [ ] [35. The Note Object´s StateChart Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#35-The-Note-Object´s-StateChart-Diagram)
 36. [ ] [36. What is next?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#36-What-is-next)
 
-[x] [Summary of the relationships and their graphical representation]()
+[x] [Summary of the relationships and their graphical representation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#summary-of-the-relationships-and-their-graphical-representation)
 
 # [UML-And-Object-Oriented-Design-Foundations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
@@ -908,7 +908,7 @@ We could specify an interface to ensure that all current and upcoming trip class
 
 <img width="212" alt="Screen Shot 2022-11-04 at 2 36 39 p m" src="https://user-images.githubusercontent.com/24994818/200069559-928ce99c-13bf-4028-bd94-462cfda64c1b.png">
 
-### Summary of the relationships and their graphical representation:
+### [Summary of the relationships and their graphical representation:](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
 Here is a quick summary of the relationships and their graphical representation:
 
