@@ -65,7 +65,7 @@ Important Concept links:
 - [Encapsulation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#encapsulation)
 - [Inheritance](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#14-inheritance)
 - [Actors](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#actors-are-human-beings-or-other-systems-that-may-interact-with-our-system)
-- [Scenario]()
+- [Scenario](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#scenario)
 - [Analysis-Paralysis](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#analysis-paralysis)
 - [Association](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#23-associations)
 - [Class Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#the-class-diagram)
@@ -74,8 +74,8 @@ Important Concept links:
 - [Sequence Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#26-sequence-diagrams)
 - [User story](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#user-stories)
 - [Epic](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#epics)
-- [ripple effect]()
-- [UML]()
+- [ripple effect](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#ripple-efect)
+- [UML](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml)
 
 # [UML-And-Object-Oriented-Design-Foundations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
