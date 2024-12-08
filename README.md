@@ -89,7 +89,7 @@ After discussing the most important UML diagram types, we will solidify the conc
 
 We will start by collecting the requirements. Then, we will create the use case diagrams. After identifying the players, we will model the classes and their relationships. You are going to also see the sequence and the state diagram in action. 
 
-# 4. [Prerequisites](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content
+# 4. [Prerequisites](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
 - [Download StarUML](https://staruml.io)
 
