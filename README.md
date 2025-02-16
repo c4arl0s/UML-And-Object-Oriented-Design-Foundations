@@ -2,6 +2,8 @@
 
 # [UML-And-Object-Oriented-Design-Foundations - Content](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#go-back-to-overview)
 
+### [Glosary]()
+
 1. [x] [1. Introduction](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#1-Introduction)
 2. [x] [2. Why you should learn Object-Oriented Design?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#2-Why-you-should-learn-Object-Oriented-Design)
 3. [x] [3. What's covered in this book ?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#3-Whats-covered-in-this-book-)
@@ -51,31 +53,9 @@
 34. [ ] [34. Describing the Flow of Note Creating using Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#34-Describing-the-Flow-of-Note-Creating-using-Sequence-Diagrams)
 35. [ ] [35. The Note Object´s StateChart Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#35-The-Note-Object´s-StateChart-Diagram)
 36. [ ] [36. What is next?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#36-What-is-next)
+37. [ ] [Summary of the relationships and their graphical representation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#summary-of-the-relationships-and-their-graphical-representation)
 
-[x] [Summary of the relationships and their graphical representation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#summary-of-the-relationships-and-their-graphical-representation)
-
-# Glosary
-
-Important Concept links:
-
-- [Functional Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#functional-requirements)
-- [Nonfunctional Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#nonfunctional-requirements)
-- [Waterfall Model](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#6-the-waterfall-model)
-- [Agile](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#7-agile)
-- [Encapsulation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#encapsulation)
-- [Inheritance](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#14-inheritance)
-- [Actors](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#actors-are-human-beings-or-other-systems-that-may-interact-with-our-system)
-- [Scenario](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#scenario)
-- [Analysis-Paralysis](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#analysis-paralysis)
-- [Association](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#23-associations)
-- [Class Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#the-class-diagram)
-- [Activity Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#27-activity-diagrams)
-- [Statechart Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#28-statechart-diagrams)
-- [Sequence Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#26-sequence-diagrams)
-- [User story](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#user-stories)
-- [Epic](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#epics)
-- [ripple effect](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#ripple-efect)
-- [UML](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml)
+### [Glosary]()
 
 # [UML-And-Object-Oriented-Design-Foundations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
@@ -414,7 +394,7 @@ Documentation and support are also nonfunctional requirements. Your software may
 
 <img width="655" alt="Screen Shot 2022-08-22 at 11 47 12 p m" src="https://user-images.githubusercontent.com/24994818/186072045-128313e7-c64f-408b-9ab7-ae22d353b784.png">
 
-Nonfunctional rrequirements are equally important. Ignoring them may cause serious legal issues and all sorts of other problems.
+Nonfunctional requirements are equally important. Ignoring them may cause serious legal issues and all sorts of other problems.
 
 Now, how do you handle this?. There are different ways to gather the requirements. The easiest way is to write them down. Here is an example from a project I have been working on.
 
@@ -444,7 +424,7 @@ These are also more formal ways, tools, and systems that support the requirement
 
 To summarize, the requirements collection step boils down to this:
 
-### Wee need to formulate what our software must do and which are the constraints and boundaries we need to consider.
+### We need to formulate what our software must do and which are the constraints and boundaries we need to consider.
 
 If we are using a waterfall approach, we need to clarify all the requirements in advance. For agile projects, it is perfectly acceptable if we continue without having all teh answers. We may even miss some of the questions. Agile lets us revisit and refine the requirements as we iterate through the software development process.
 
@@ -1374,3 +1354,27 @@ By now, you have probably got an idea of how class diagrams are created. Now tha
 # 34. [Describing the Flow of Note Creating using Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 35. [The Note Object´s StateChart Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 36. [What is next?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+# [Glosary]()
+
+Important Concept links:
+
+- [Functional Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#functional-requirements)
+- [Nonfunctional Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#nonfunctional-requirements)
+- [Waterfall Model](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#6-the-waterfall-model)
+- [Agile](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#7-agile)
+- [Encapsulation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#encapsulation)
+- [Inheritance](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#14-inheritance)
+- [Actors](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#actors-are-human-beings-or-other-systems-that-may-interact-with-our-system)
+- [Scenario](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#scenario)
+- [Analysis-Paralysis](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#analysis-paralysis)
+- [Association](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#23-associations)
+- [Class Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#the-class-diagram)
+- [Activity Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#27-activity-diagrams)
+- [Statechart Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#28-statechart-diagrams)
+- [Sequence Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#26-sequence-diagrams)
+- [User story](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#user-stories)
+- [Epic](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#epics)
+- [ripple effect](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#ripple-efect)
+- [UML](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml)
+
