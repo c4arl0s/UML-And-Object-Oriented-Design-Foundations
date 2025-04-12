@@ -1352,6 +1352,41 @@ Networking is slow, so these should be implemented as asynchronous operations.
 By now, you have probably got an idea of how class diagrams are created. Now that we mapped the static structure of our system, we can start analysing its behavioir.
 
 # 34. [Describing the Flow of Note Creating using Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+I´m going to walk you through the creation of the sequence diagram for one specific scenario: adding a new note.
+
+We will be focusing on the flow of note creation. We try to answer the following question: 
+
+### which objects are involved and what messages are sent between them?
+
+The user can initiate the note creation by pressing a button on the application´s UI. So, we need a view instance first that represents the button. The button receives the user input and triggers and event that is intercepted by a controller object.
+
+<img width="314" alt="Image" src="https://github.com/user-attachments/assets/16786451-0674-4530-9b66-b8b4e23c2f01" />
+
+Having separate view and controller objects stands at the core of a well-known architectural desing pattern called Model-View-Controller. The view displays data and receives user input. The controller triggers actions based on events received from its view and processes the data to be displayed.
+
+In our scenario. the Controller triggers the creation of a new Note instance. We will use a create message rather tha a regular one. A note object gets created.
+
+<img width="470" alt="Image" src="https://github.com/user-attachments/assets/8e09c3f1-e7ac-44d1-b97c-b9b7a96252a8" />
+
+Next, the user fills the Note´s details and presses the save button. This will trigger two actions: saving to the local persistence and uploading the new note to the cloud.
+
+Local persistence is managed by the FileManager object. I invoke the `save(note: Note)` method. File operations are slow, thus I call the save method asynchronously. To avoid misunderstanding I mark the message explicitly as async.
+
+<img width="617" alt="Image" src="https://github.com/user-attachments/assets/7dee85b3-2e44-4093-9769-f3654ba4742b" />
+
+For the upload part, we need an `OnlineManager` instance. The `upload(note: Note)` method gets executed in the background, too.
+
+<img width="661" alt="Image" src="https://github.com/user-attachments/assets/06c6f317-2962-4f0d-a31c-1b4b7bc89eb5" />
+
+The saving to local persistence and uploading the new Note to the cloud are asynchronous, so they return instantly , without blocking the caller. Eventually, they return to signal either success or failure.
+
+<img width="658" alt="Image" src="https://github.com/user-attachments/assets/7ecca317-59f5-4d97-9bb8-6bdb5295c44c" />
+
+This sequence diagram tells us a lot about the objects and how they interact in the note creation scenario.
+
+We can provide more details by adding further objects and messages as needed.  
+
 # 35. [The Note Object´s StateChart Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 # 36. [What is next?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
