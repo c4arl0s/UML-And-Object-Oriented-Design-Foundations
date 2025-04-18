@@ -2,7 +2,7 @@
 
 # [UML-And-Object-Oriented-Design-Foundations - Content](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#go-back-to-overview)
 
-### [Glosary]()
+### [Glosary](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations?tab=readme-ov-file#glosary-2)
 
 1. [x] [1. Introduction](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#1-Introduction)
 2. [x] [2. Why you should learn Object-Oriented Design?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#2-Why-you-should-learn-Object-Oriented-Design)
@@ -50,12 +50,12 @@
     - [x] [Epic #2: Privacy - Protecting User Data](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#epic-2-privacy---protecting-user-data-1)
     - [x] [pic #3: Syncing to cloud servers](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#epic-3-syncing-to-cloud-servers)
 33. [x] [33. Identifying the classes](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#33-Identifying-the-classes)
-34. [ ] [34. Describing the Flow of Note Creating using Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#34-Describing-the-Flow-of-Note-Creating-using-Sequence-Diagrams)
-35. [ ] [35. The Note Object´s StateChart Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#35-The-Note-Object´s-StateChart-Diagram)
+34. [x] [34. Describing the Flow of Note Creating using Sequence Diagrams](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#34-Describing-the-Flow-of-Note-Creating-using-Sequence-Diagrams)
+35. [x] [35. The Note Object´s StateChart Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#35-The-Note-Object´s-StateChart-Diagram)
 36. [ ] [36. What is next?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#36-What-is-next)
 37. [ ] [Summary of the relationships and their graphical representation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#summary-of-the-relationships-and-their-graphical-representation)
 
-### [Glosary]()
+### [Glosary](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations?tab=readme-ov-file#glosary-2)
 
 # [UML-And-Object-Oriented-Design-Foundations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
@@ -1388,9 +1388,57 @@ This sequence diagram tells us a lot about the objects and how they interact in 
 We can provide more details by adding further objects and messages as needed.  
 
 # 35. [The Note Object´s StateChart Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
+
+Let´s take a closer look at the possible states of a note object. A note object is created, saved and that´s it, right? Well, not quite.
+Let´s start analyzing the possible states and what could go wrong. We will soon realize that we need to represent more states than we originally assumed.
+
+The Note object´s statechart diagram starts with an initial state. When we create a note, it is in the New state. This condition is triggered by the creation event.
+
+<img width="214" alt="Image" src="https://github.com/user-attachments/assets/ada40218-4110-4f83-bafe-37b3047e4bc2" />
+
+After a new note is created, the user needs to fill in some details. At the end of this process, the note will have ***unsaved changes***. We need a state to express this condition.
+
+<img width="460" alt="Image" src="https://github.com/user-attachments/assets/50b67518-562d-42b8-847d-821b1f41c8c4" />
+
+Now, the user can save the Note. He may also decide to cancel the process, which means that our state machine reached its final state.
+
+<img width="613" alt="Image" src="https://github.com/user-attachments/assets/316a1144-59ba-4705-beba-cfdb7490bb8d" />
+
+Saving a note implies storing it in the local persistence and uploading it to the cloud. These are two actions that could potentially fail.
+
+If both fail, the state of our Note object turns back to ***Unsaved Changes***. Otherwise, we switch to the ***Persisted & Uploaded*** state. 
+
+<img width="679" alt="Image" src="https://github.com/user-attachments/assets/24f98b96-6f53-4e4b-ba47-e1994b9a3d3d" />
+
+Storing a new note in the filesystem will usually complete without issues. However, uploading data to a server could fail for various reasons. The ***Persisted*** state shows that only the local storage was successful.
+
+<img width="664" alt="Image" src="https://github.com/user-attachments/assets/25c87acc-51df-406f-9416-fe56cfea78bf" />
+
+The user can retry the uploading action, which changes the state of the note object to ***Upload Pending***. If this attempt also fails, we go back to the ***Persisted*** state. . Otherwise, the object´s state switches to ***Persisted & Uploaded***. 
+
+<img width="658" alt="Image" src="https://github.com/user-attachments/assets/23457064-a752-4025-9a97-00cf536c4589" />
+
+Our note object was successfully created, saved to the local persistence and uploaded to a cloud server. That is the last state so we can complete our state machine by transitioning to the final state.
+
+<img width="674" alt="Image" src="https://github.com/user-attachments/assets/50ed561a-a654-43a6-8847-5b40ba676beb" />
+
+When creating statechart diagrams, It is important to always have a way to exit a state after it is entered. The only exceptions are the initial and the final states. 
+
+Let´s say that I want to express the ***Archived*** state. The note object should switch to that state if the ***app is terminated*** while the note is in the ***Unsaved Changes*** state.
+
+<img width="672" alt="Image" src="https://github.com/user-attachments/assets/cc101d30-6b86-404f-902a-fcd96f7d74b5" />
+
+When the user starts the app next time, the note remains stuck in this ***Archived*** state. There is no transition to any other state. This situation is called deadlock and It is one of the biggest issues you can encounter with state machines.
+
+To solve the problem, I add transition to the ***Unsaved Changes***. This transition is triggered by the ***App started event***
+
+<img width="676" alt="Image" src="https://github.com/user-attachments/assets/d1664e46-4193-4770-b79e-e8d9c995b8d2" />
+
+So, this is the statechard diagram for the note object. We definitely got more states than we originnale assumed.
+
 # 36. [What is next?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
-# [Glosary]()
+# [Glosary](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 Important Concept links:
 
