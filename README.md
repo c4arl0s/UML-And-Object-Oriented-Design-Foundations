@@ -1438,6 +1438,14 @@ So, this is the statechard diagram for the note object. We definitely got more s
 
 # 36. [What is next?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
 
+By now, you have probably become familiar with the fundamental object-oriented design concepts.
+
+Practice makes the master. Try to put the techniques described in this book into practice. You will notice that designing software systems gets easier over time.
+
+Explore different alternatives when sketching your designs. Although there are some best practices, feel free to adapt them to your needs.
+
+And most importantly: don´t get lost in the details. Start with a simpler, draft design. You can gradually refine and enhance your diagrams as you understand more about the system you are building.
+
 # [Glosary](https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 Important Concept links:
