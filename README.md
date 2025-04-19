@@ -1436,6 +1436,8 @@ To solve the problem, I add transition to the ***Unsaved Changes***. This transi
 
 <img width="676" alt="Image" src="https://github.com/user-attachments/assets/d1664e46-4193-4770-b79e-e8d9c995b8d2" />
 
+![Image](https://github.com/user-attachments/assets/0855b5f0-265c-47a5-ac04-6f54f58f9cfc)
+
 So, this is the statechard diagram for the note object. We definitely got more states than we originnale assumed.
 
 # 36. [What is next?](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations#uml-and-object-oriented-design-foundations---content)
