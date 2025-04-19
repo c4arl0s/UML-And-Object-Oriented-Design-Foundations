@@ -1383,6 +1383,8 @@ The saving to local persistence and uploading the new Note to the cloud are asyn
 
 <img width="658" alt="Image" src="https://github.com/user-attachments/assets/7ecca317-59f5-4d97-9bb8-6bdb5295c44c" />
 
+![Image](https://github.com/user-attachments/assets/282db0b4-3bd0-4b67-8628-91d6f9edc620)
+
 This sequence diagram tells us a lot about the objects and how they interact in the note creation scenario.
 
 We can provide more details by adding further objects and messages as needed.  
