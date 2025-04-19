@@ -213,42 +213,42 @@ The objects that form the system interact with each other. Object-orientation ai
 
 What kinds of things become objects in object-oriented programs? The answer to this is lim- ited only by your imagination, but here are some typical categories to start you thinking:
 
-# Physical objects
+# [Physical objects](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 - Automobiles in a traffic-flow simulation 
 - Electrical components in a circuit-design program 
 - Countries in an economics model
 - Aircraft in an air traffic control system
 
-# Elements of the computer-user environment
+# [Elements of the computer-user environment](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 - Menus
 - Graphics objects (lines, rectangles, circles) 
 - The mouse, keyboard, disk drives, printer
 
-# Data-storage constructs
+# [Data-storage constructs](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 - Customized arrays
 - Stacks
 - Linked lists
 - Binary trees
 
-# Human entities
+# [Human entities](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 - Employees
 - Students
 - Customers
 - Salespeople
 
-# Collections of data
+# [Collections of data](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 - An inventory
 - A personnel file
 - A dictionary
 - A table of the latitudes and longitudes of world cities
 
-# User-defined data types
+# [User-defined data types](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 - Time
 - Angles
 - Complex numbers
 - Points on the plane
 
-# Components in computer games
+# [Components in computer games](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 - Cars in an auto race
 - Positions in a board game (chess, checkers)
 - Animals in an ecological simulation
@@ -266,7 +266,7 @@ We created a class by a giving it a name, declaring its properties an actions. W
 
 <img width="516" alt="Screenshot 2023-10-28 at 1 55 18 p m" src="https://github.com/c4arl0s/UML-And-Object-Oriented-Design-Foundations/assets/24994818/c5ca1799-af26-435c-b7f1-87f213e7b945">
 
-# More definitions
+# [More definitions](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 - A class serves as a plan, or blueprint.
 
@@ -288,11 +288,11 @@ We don´t want to expose the inner workings of our class. An object should only 
 
 We restrict clients from modifying the object in ways we did not originally plan, whether it is intentional or accidental. Additionally, we prevent other parts of the system from relying on properties or behavior that may change.
 
-### encapsulation
+### [encapsulation](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 If we expose unnecessary details, any changes to those attributes or methods may affect other parts of the system. Whereas if we restricted access to that data or behavior, we don´t have to worry about the ripple effect of our changes.
 
-### Ripple efect
+### [Ripple efect](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 > Small changes can ripple through software to cause major unintended impacts elsewhere.
 
@@ -306,7 +306,7 @@ A tighly couple system, with most of the objects depending on each other, is the
 
 Any tiny modification will cascade down and require you to change other parts of the system, too. It is like a never-ending nightmare.
 
-# More Definitions
+# [More Definitions](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 - `Encapsulation` is usually defined as one of two things, 
 1. A mechanism by which information (code) is hidden. 
@@ -369,7 +369,7 @@ That object was type `WaterPokemon`, which overrides the `attack()` method.
 
 Requirement means "a thing that is needed or wanted". We must clarified what is needed or wanted in our applications.
 
-### Functional Requirements
+### [Functional Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 The features of the system are the so-called functional requirements. Functional requirements represent what the app needs to provide feature-wise, how it should react to a particular input, or what is the expected behavior in a specific situation.
 
@@ -382,7 +382,7 @@ Let's say you are about to develop an app for runners. You should answer questio
 
 <img width="621" alt="Screen Shot 2022-08-22 at 11 17 38 p m" src="https://user-images.githubusercontent.com/24994818/186068633-7328e5f7-fc70-40c0-bf49-5bb08c41648d.png">
 
-### Nonfunctional Requirements
+### [Nonfunctional Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 We will usually also have nonfunctional requirements. These are the requirements that are not directly related to a feature or behavior of the software system but are important nevertheless.
 
@@ -398,13 +398,13 @@ Nonfunctional requirements are equally important. Ignoring them may cause seriou
 
 Now, how do you handle this?. There are different ways to gather the requirements. The easiest way is to write them down. Here is an example from a project I have been working on.
 
-# Functional Requirements
+# [Functional Requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 1. The app must store travel expenses organized by trips.
 2. Each trip must have a home currency. The default currency is fetched from the phone's settings. User setting must override the default home currency.
 3. Expenses can be entered in any of the supported currencies. The app must automatically convert the amounts to the home currency.
 
-# Nonfunctional requirements
+# [Nonfunctional requirements](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 1. The app must run on iOS 9 and newer versions.
 2. The app must avoid unnecessary network roundtrips to reduce data roaming fees and preserve battery.
@@ -412,7 +412,7 @@ Now, how do you handle this?. There are different ways to gather the requirement
 
 These are short, concise phrases in the form
 
-# The app/system must do something
+# [The app/system must do something](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 We don't want to write lenghthy descriptions but you can freely adapt this format to your needs.
 
@@ -424,7 +424,7 @@ These are also more formal ways, tools, and systems that support the requirement
 
 To summarize, the requirements collection step boils down to this:
 
-### We need to formulate what our software must do and which are the constraints and boundaries we need to consider.
+### [We need to formulate what our software must do and which are the constraints and boundaries we need to consider.](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 If we are using a waterfall approach, we need to clarify all the requirements in advance. For agile projects, it is perfectly acceptable if we continue without having all teh answers. We may even miss some of the questions. Agile lets us revisit and refine the requirements as we iterate through the software development process.
 
@@ -436,7 +436,7 @@ Once we have gathered the requirements, we can feed them to the next step of the
 
 **One way documenting our system's features is through use-cases**. 
 
-# Use case
+# [Use case](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 A use-case needs a title. Something like:
 
@@ -448,13 +448,13 @@ Note that each use case should represent a disctinct functionality.
 
 Next, we define the actor who is using this functionality. We call it a "actor" since it can represent a user who is interacting with tha app, but also a non-human entity, like another system.
 
-### Scenario
+### [Scenario](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 Then, we describe the details of this specific use-case. **This is called the scenario.**
 
 Here we should write one or more sentences that explain what and how the system works in this particular case. Here is an example:
 
-# title: "Create new trip", actor: "user of the mobile app"
+# [title: "Create new trip", actor: "user of the mobile app"](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 - The user can initiate the creation of a new trip from the main screen.
 - The title is mandatory. All the other settings are optional.
@@ -464,7 +464,7 @@ Here we should write one or more sentences that explain what and how the system 
 - Also, the user can assign a custom thumbnail to a trip.
 - And the user can save the trip or cancel the trip creation process. 
 
-# Avoid technical terms.
+# [Avoid technical terms.](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 You can write this as a praragraph or as a bulleted list. The format does not really matter. **But it is important to avoid technical terms**. Again, this description should be understood by all stakeholders, includinh the end users.
 
@@ -472,7 +472,7 @@ The format of the use-case document may vary from company to company. Some may i
 
 The use-case document aims to provide a clear and human-friendly description. What a specific part of the software does and how the actor interacts with it. And this is a textual description. We will talk about the use-case diagrams later.
 
-# User stories
+# [User stories](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 User stories are another common way of describing certain features or parts of our application. User stories are shorter than use-case descriptions, usually only one-two sentence long. They typically follow this format:
 
@@ -485,7 +485,7 @@ Examples:
 
 If you can't describe a user story in one or two sentences, you may need to split it into multiple, smaller user stories.
 
-# Epics
+# [Epics](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 These larger user stories are known as epics. Epics cover a bigger chunk of functionality, like in the following case:
 
@@ -524,7 +524,7 @@ The development community faced this very same problem. The lack of a commonly a
 
 We could also try to come up with a way to draw everything from classes to object interactions. Luckily, we don´t have to.
 
-# UML describes structure and behavior
+# [UML describes structure and behavior](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 The Unified Modeling Language is a common design language that was released in 1997. UML. UML provides a set of standard diagram types that can be used to describe both the structure and the bahavior of software systems.
 
@@ -540,19 +540,19 @@ The Unified Modeling Language - in short UML - was introduced to solve this prob
 
 We can use these diagrams to describe the objects that form a system and their interactions. UML has many diagram types. We will be discussing the most common ones. 
 
-# The use-case diagram describes the functional model of a system. 
+# [The use-case diagram describes the functional model of a system.](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 That is, the functionality of a system from the user's point of view.
 
 <img width="492" alt="Screen Shot 2022-08-30 at 10 14 15 p m" src="https://user-images.githubusercontent.com/24994818/187584735-ab205f00-3935-4e60-aa9f-40168b22e5f9.png">
 
-# UML can describe structure.
+# [UML can describe structure.](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 To describe the structure of a system. UML provides structural diagrams. We will talk about the class diagram, which can be used to describe the structure of a system in terms of objects, attributes, operations, and relations.
 
 <img width="419" alt="Screen Shot 2022-08-30 at 10 17 22 p m" src="https://user-images.githubusercontent.com/24994818/187585096-0f8e6ed9-7986-4290-9589-3a402cf73856.png">
 
-# UML can describe dynamic behavior.
+# [UML can describe dynamic behavior.](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 UML lets us model dynamic behavior, too. The behavioral diagrams describe the functionality of the system, focusing on what happens and the interactions between objects.
 
@@ -572,11 +572,11 @@ We can quickly draw a diagram to sketch a specific part of a software or a new f
 
 The benefit was that I not only understood what I should implement, I also had a design. A documentation that could be used to communicate my ideas with other team members.
 
-# Reverse Engineering
+# [Reverse Engineering](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 Another frequent use of UML is drawing diagrams from existing code. This technique is called reverse engineering, and it helps to understand and document a system.
 
-# Detailed blueprint
+# [Detailed blueprint](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 We can also use UML to create the detailed bluprint of a system. While sketches focus only on the essential aspects of a system, the blueprint is about completeness. Detailed UML blueprints are usually required for software development using a Waterfall-approach and less frequently for Agile projects.
 
@@ -640,7 +640,7 @@ You can´t go wrong if you focus on the actors, the use-cases, and their interac
 
 They are not a replacement for written use-case descriptions, though. Use-case descriptions include more information to ensure that we don't miss any of the important details or requirements.
  
-# [The Class Diagram]()
+# [The Class Diagram](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 A class is represented on the class diagram as a rectangle with threee compartments. First, we need to list the class's name.
 
@@ -660,7 +660,7 @@ It is useful to specify the type of the attribute. We can do that by writting th
 
 <img width="307" alt="Screen Shot 2022-09-03 at 10 33 11 p m" src="https://user-images.githubusercontent.com/24994818/188296005-525f352b-6d94-4725-b008-0a9f51c63060.png">
 
-### Operations
+### [Operations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 This is where we list the class´s methods. Method names should be verbs in lowerCamelCase.
 
@@ -680,7 +680,7 @@ And we can also have methods that have arguments and a return type.
 
 <img width="300" alt="Screen Shot 2022-09-03 at 10 37 48 p m" src="https://user-images.githubusercontent.com/24994818/188296129-bc6c4b8f-706f-4aea-9503-da29ab640015.png">
 
-### Operations
+### [Operations](https://github.com/c4arl0s/uml-and-object-oriented-design-foundations?tab=readme-ov-file#uml-and-object-oriented-design-foundations---content)
 
 This is where we list the class´s methods. Method names should be verbs in lowerCamelCase.
 
@@ -782,6 +782,8 @@ Here is one of the functional requirements of the TravelExpense app.
 "As a traveler, I want to track my expenses while abroad, so that I don´t exceed my budget"
 
 We have a Trip and an Expense class. Each trip will include it´s travel expenses. So, there needs to be some relationship between the Trip and the Expense class.
+
+# The Trip class needs to know about its expenses. 
 
 To express this relationship, we draw a solid line between these classes.
 
